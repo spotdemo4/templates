@@ -21,6 +21,8 @@
       url = "github:spotdemo4/nur";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    self.submodules = true;
   };
 
   outputs = {
