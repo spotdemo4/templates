@@ -1,0 +1,31 @@
+name: update
+
+on:
+  schedule:
+    - cron: "9 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: spotdemo4/templates/.github/actions/init@main
+
+      - uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1.2.1
+        with:
+          arguments: ".#update"
+
+      - uses: actions/create-github-app-token@a8d616148505b5069dccd32f177bb87d7f39123b # v2.1.1
+        id: token
+        with:
+          app-id: ${{ vars.CLIENT_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
+
+      - name: Renovate
+        env:
+          RENOVATE_CONFIG_FILE: .github/renovate.json
+          RENOVATE_TOKEN: ${{ steps.token.outputs.token }}
+        run: renovate
