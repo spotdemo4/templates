@@ -15,4 +15,4 @@ runs:
           extra-substituters = https://trevnur.cachix.org
           extra-trusted-public-keys = trevnur.cachix.org-1:hBd15IdszwT52aOxdKs5vNTbq36emvEeGqpb25Bkq6o=
 
-    - uses: spotdemo4/nix-simple-cache-action@678b319b2d13680785ab65a0f5618a2e662ac04d # v1.4.8
+    - uses: spotdemo4/nix-simple-cache-action@be74283a8cc4c00b53a7b1dbdfbd9679bbdf0629 # v1.4.13
