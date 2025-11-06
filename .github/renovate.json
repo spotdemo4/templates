@@ -8,7 +8,7 @@
   "repositories": ["spotdemo4/templates"],
 
   // repository
-  "extends": ["config:recommended", "group:allDigest"],
+  "extends": ["config:recommended"],
   "branchPrefix": "renovate/",
   "dependencyDashboardTitle": "Dependency Dashboard",
   "lockFileMaintenance": {
@@ -18,13 +18,20 @@
   "nix": {
     "enabled": true
   },
-  "git-submodules": {
-    "enabled": true
-  },
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
+    },
+    {
+      "groupName": "Nix Inputs",
+      "matchManagers": ["nix"],
+      "matchPackageNames": ["*"]
+    },
+    {
+      "groupName": "GitHub Actions",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["*"]
     }
   ]
 }

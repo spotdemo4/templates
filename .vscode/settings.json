@@ -4,7 +4,16 @@
   // nix
   "nix.enableLanguageServer": true,
   "nix.serverPath": "nixd",
-  "nix.formatterPath": "alejandra",
+  "nix.serverSettings": {
+    "nixd": {
+      "formatting": {
+        "command": ["alejandra"]
+      }
+    }
+  },
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  },
 
   // actions
   "editor.defaultFormatter": "esbenp.prettier-vscode",
