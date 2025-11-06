@@ -60,7 +60,7 @@
         };
       };
 
-      checks = pkgs.trev.lib.mkChecks {
+      checks = pkgs.lib.mkChecks {
         nix = {
           src = ./.;
           deps = with pkgs; [
