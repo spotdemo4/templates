@@ -1,5 +1,27 @@
 {
   "nodes": {
+    "go-template": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "nur": "nur",
+        "semgrep-rules": "semgrep-rules",
+        "systems": "systems",
+        "utils": "utils"
+      },
+      "locked": {
+        "lastModified": 1762428605,
+        "narHash": "sha256-OBvzEKiMqWNQ9mr05WzeePRZOJlbfldUuph8QVK8PPE=",
+        "owner": "spotdemo4",
+        "repo": "go-template",
+        "rev": "d0481a095f3275fa9470a33f23a57126677f578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spotdemo4",
+        "repo": "go-template",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1762361079,
@@ -16,7 +38,44 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1762361079,
+        "narHash": "sha256-lz718rr1BDpZBYk7+G8cE6wee3PiBUpn8aomG/vLLiY=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "ffcdcf99d65c61956d882df249a9be53e5902ea5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nur": {
+      "inputs": {
+        "nixpkgs": [
+          "go-template",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762416129,
+        "narHash": "sha256-3DDGSa4pXrdIQNJK39cCGk0FOGO2uqrV0F6VX37k160=",
+        "owner": "spotdemo4",
+        "repo": "nur",
+        "rev": "f80032487088b62e3d4b37821800f87287c5f305",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spotdemo4",
+        "repo": "nur",
+        "type": "github"
+      }
+    },
+    "nur_2": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
@@ -38,10 +97,27 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs",
-        "nur": "nur",
-        "systems": "systems",
-        "utils": "utils"
+        "go-template": "go-template",
+        "nixpkgs": "nixpkgs_2",
+        "nur": "nur_2",
+        "systems": "systems_2",
+        "utils": "utils_2"
+      }
+    },
+    "semgrep-rules": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761809232,
+        "narHash": "sha256-bP5QAYTd7TSUl7T5Sn9pol7SzWmRGyjQfqg8mgJBgzs=",
+        "owner": "semgrep",
+        "repo": "semgrep-rules",
+        "rev": "885b51b436172903a918cb70d127aad1b39369de",
+        "type": "github"
+      },
+      "original": {
+        "owner": "semgrep",
+        "repo": "semgrep-rules",
+        "type": "github"
       }
     },
     "systems": {
@@ -58,7 +134,42 @@
         "type": "indirect"
       }
     },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "id": "systems",
+        "type": "indirect"
+      }
+    },
     "utils": {
+      "inputs": {
+        "systems": [
+          "go-template",
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "utils_2": {
       "inputs": {
         "systems": [
           "systems"

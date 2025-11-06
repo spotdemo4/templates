@@ -3,10 +3,10 @@
 
   nixConfig = {
     extra-substituters = [
-      "https://trevnur.cachix.org"
+      "https://cache.trev.zip/nur"
     ];
     extra-trusted-public-keys = [
-      "trevnur.cachix.org-1:hBd15IdszwT52aOxdKs5vNTbq36emvEeGqpb25Bkq6o="
+      "nur:70xGHUW1+1b8FqBchldaunN//pZNVo6FKuPL4U/n844="
     ];
   };
 
@@ -22,29 +22,34 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    self.submodules = true;
+    # templates
+    go-template.url = "github:spotdemo4/go-template";
   };
 
   outputs = {
     nixpkgs,
     utils,
     nur,
+    go-template,
     ...
   }:
     utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {
         inherit system;
-        overlays = [nur.overlays.default];
+        overlays = [
+          nur.overlays.packages
+          nur.overlays.libs
+        ];
       };
     in {
       devShells = {
         default = pkgs.mkShell {
-          shellHook = pkgs.trev.shellhook.ref;
+          shellHook = pkgs.shellhook.ref;
         };
 
         update = pkgs.mkShell {
           packages = with pkgs; [
-            trev.renovate
+            renovate
           ];
         };
 
@@ -71,7 +76,7 @@
           deps = with pkgs; [
             prettier
             action-validator
-            trev.renovate
+            renovate
           ];
           script = ''
             prettier --check .
@@ -88,7 +93,7 @@
         default = go;
 
         go = {
-          path = ./go;
+          path = go-template;
           description = "trev's Go template";
           welcomeText = ''
             # trev's Go Template
