@@ -17,7 +17,7 @@ jobs:
         uses: spotdemo4/nix-init@b1a572723d705a405747541fad38545a57f03ee3 # v1.7.0
         with:
           app_id: ${{ vars.CLIENT_ID }}
-          private_key: ${{ secrets.PRIVATE_KEY }}
+          app_key: ${{ secrets.PRIVATE_KEY }}
           shell: update
 
       - name: Renovate
