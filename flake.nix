@@ -102,7 +102,7 @@
         };
 
         svelte = {
-          path = go-template;
+          path = svelte-template;
           description = "trev's svelte template";
           welcomeText = builtins.readFile "${svelte-template}/.github/README.md";
         };
