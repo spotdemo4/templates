@@ -11,10 +11,8 @@ Jumping off templates for various languages. Includes automated updates, testing
 
 https://github.com/spotdemo4/go-template/
 
-```elm
+```bash
 nix flake init --template github:spotdemo4/templates#go
-ln -s .envrc.project .envrc
-direnv allow
 ```
 
 ## Recommendations
