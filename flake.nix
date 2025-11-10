@@ -94,11 +94,8 @@
 
         go = {
           path = go-template;
-          description = "trev's Go template";
-          welcomeText = ''
-            # trev's Go Template
-            wip
-          '';
+          description = "trev's go template";
+          welcomeText = builtins.readFile "${go-template}/.github/README.md";
         };
       };
     };
