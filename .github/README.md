@@ -15,6 +15,14 @@ https://github.com/spotdemo4/go-template/
 nix flake init --template github:spotdemo4/templates#go
 ```
 
+### Svelte
+
+https://github.com/spotdemo4/svelte-template/
+
+```bash
+nix flake init --template github:spotdemo4/templates#svelte
+```
+
 ## Recommendations
 
 - [direnv](https://direnv.net/)
