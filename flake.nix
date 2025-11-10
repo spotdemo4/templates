@@ -11,7 +11,7 @@
   };
 
   inputs = {
-    systems.url = "systems";
+    systems.url = "github:nix-systems/default";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     utils = {
       url = "github:numtide/flake-utils";
