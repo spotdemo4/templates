@@ -3,13 +3,13 @@
 ![check](https://github.com/spotdemo4/templates/actions/workflows/check.yaml/badge.svg)
 ![vulnerable](https://github.com/spotdemo4/templates/actions/workflows/vulnerable.yaml/badge.svg)
 
-Jumping off templates for various languages. Includes automated updates, testing and building. Built around [nix](https://nixos.org/) flakes.
+Jumping off templates for various languages. Includes automated updates, testing and releasing. Built around [nix](https://nixos.org/) flakes.
 
 ## Languages
 
 ### Go
 
-https://github.com/spotdemo4/go-template/
+[github.com/spotdemo4/go-template](https://github.com/spotdemo4/go-template/)
 
 ```elm
 nix flake init --template github:spotdemo4/templates#go
@@ -17,7 +17,7 @@ nix flake init --template github:spotdemo4/templates#go
 
 ### Svelte
 
-https://github.com/spotdemo4/svelte-template/
+[github.com/spotdemo4/svelte-template](https://github.com/spotdemo4/svelte-template/)
 
 ```elm
 nix flake init --template github:spotdemo4/templates#svelte
