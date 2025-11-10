@@ -11,7 +11,7 @@ Jumping off templates for various languages. Includes automated updates, testing
 
 https://github.com/spotdemo4/go-template/
 
-```bash
+```elm
 nix flake init --template github:spotdemo4/templates#go
 ```
 
@@ -19,7 +19,7 @@ nix flake init --template github:spotdemo4/templates#go
 
 https://github.com/spotdemo4/svelte-template/
 
-```bash
+```elm
 nix flake init --template github:spotdemo4/templates#svelte
 ```
 
