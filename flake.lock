@@ -9,11 +9,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1762763346,
-        "narHash": "sha256-V4aXq4ELlOq/dTc0hbmPLeAow7WiWiWcBP03Q6+s9LA=",
+        "lastModified": 1762851868,
+        "narHash": "sha256-IawK6rV2stmLUHySyd9+iDh+hFA6G47/5x2OpSPZGms=",
         "owner": "spotdemo4",
         "repo": "go-template",
-        "rev": "185fccc471a3c00d2948d153be01220f2d457973",
+        "rev": "079e739c299873b6705df565475fbfc0a3d00cb0",
         "type": "github"
       },
       "original": {
@@ -78,11 +78,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762679517,
-        "narHash": "sha256-M1K08vkXVe92VyTFECgT1zK1Bfkl4R01Q//RyEtjbZo=",
+        "lastModified": 1762804124,
+        "narHash": "sha256-bLzqGA8PZWNNqv4Xh81BKtTXbBSV5FHo+dj16+PhlB0=",
         "owner": "spotdemo4",
         "repo": "nur",
-        "rev": "4ddfe801a49f496ca2ac78fb173d2f90cd57a81b",
+        "rev": "a77fa12e12b628f58f0980fa70fdb8defed31feb",
         "type": "github"
       },
       "original": {
@@ -98,11 +98,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762679517,
-        "narHash": "sha256-M1K08vkXVe92VyTFECgT1zK1Bfkl4R01Q//RyEtjbZo=",
+        "lastModified": 1762804124,
+        "narHash": "sha256-bLzqGA8PZWNNqv4Xh81BKtTXbBSV5FHo+dj16+PhlB0=",
         "owner": "spotdemo4",
         "repo": "nur",
-        "rev": "4ddfe801a49f496ca2ac78fb173d2f90cd57a81b",
+        "rev": "a77fa12e12b628f58f0980fa70fdb8defed31feb",
         "type": "github"
       },
       "original": {
@@ -183,11 +183,11 @@
         "utils": "utils_2"
       },
       "locked": {
-        "lastModified": 1762800694,
-        "narHash": "sha256-q5cDnYN5v/nDMXETAQlBlJDA8v/vDcqBArhimK9JbIA=",
+        "lastModified": 1762812158,
+        "narHash": "sha256-ZThpTIdfW4rBxJQz12d5t0rRhX7790XR6pp3zW2IXHE=",
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "b0d881b8395950a4e8a0b98ecef0ee64dc012905",
+        "rev": "0ab82089403c91d5b8fab3d59a2270674a2189d6",
         "type": "github"
       },
       "original": {
@@ -206,8 +206,9 @@
         "type": "github"
       },
       "original": {
-        "id": "systems",
-        "type": "indirect"
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
       }
     },
     "systems_2": {
