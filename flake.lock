@@ -141,11 +141,11 @@
         "utils": "utils_2"
       },
       "locked": {
-        "lastModified": 1763106612,
-        "narHash": "sha256-fEPl532CTiY0UI2lA2tzp7l0WTt+HbC7aerjelb0inw=",
+        "lastModified": 1763157771,
+        "narHash": "sha256-crsVhk0sEKPKgJyv9+3sNFBD18nN96tnTc1Z3yDo8hE=",
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "9e38c0e84863bab93dba0be8e2a73ef67a3195f8",
+        "rev": "b114a2a61931d9a8b7ffdd8b5ad45b23e4fb7b68",
         "type": "github"
       },
       "original": {
