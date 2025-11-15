@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Initialize
         id: init
-        uses: spotdemo4/nix-init@d96e51032eab0e79b908192bcf66ed723140d0b1 # v1.8.4
+        uses: spotdemo4/nix-init@653c485759755505036c9e4b09b86b1f6a6ae511 # v1.8.7
 
       - name: Run checks
         if: ${{ steps.init.outputs.duplicate != 'true' }}
