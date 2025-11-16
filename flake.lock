@@ -9,11 +9,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1763104173,
-        "narHash": "sha256-sKRJM7RgGeWsfPG5EVOEQizTXO4Bw9jydKovZtDuiO4=",
+        "lastModified": 1763276934,
+        "narHash": "sha256-9EHX0RlcLtikLoDDByBJRmpF9poiaY8zdYd/6TvlSXA=",
         "owner": "spotdemo4",
         "repo": "go-template",
-        "rev": "79c1459cea59a149a598909973170e23a5f776b2",
+        "rev": "9a4968e4806dfed9a053635cd6214ac6c71f6124",
         "type": "github"
       },
       "original": {
@@ -40,11 +40,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1762943920,
-        "narHash": "sha256-ITeH8GBpQTw9457ICZBddQEBjlXMmilML067q0e6vqY=",
+        "lastModified": 1763191728,
+        "narHash": "sha256-esRhOS0APE6k40Hs/jjReXg+rx+J5LkWw7cuWFKlwYA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60",
+        "rev": "1d4c88323ac36805d09657d13a5273aea1b34f0c",
         "type": "github"
       },
       "original": {
@@ -141,11 +141,11 @@
         "utils": "utils_2"
       },
       "locked": {
-        "lastModified": 1763157771,
-        "narHash": "sha256-crsVhk0sEKPKgJyv9+3sNFBD18nN96tnTc1Z3yDo8hE=",
+        "lastModified": 1763276794,
+        "narHash": "sha256-3YN+DqmMKY7aW44TEv3oR+rMkAtgSLD1VB1VzyX5Efw=",
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "b114a2a61931d9a8b7ffdd8b5ad45b23e4fb7b68",
+        "rev": "d82c13e88eed5ebe8e43135a78211b847600d4a1",
         "type": "github"
       },
       "original": {
