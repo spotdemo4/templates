@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Initialize
-        uses: spotdemo4/nix-init@050b8d7887f729841b2d104d745c642f2cf5c951 # v1.8.11
+        uses: spotdemo4/nix-init@081eaaf70d8590936c65966af8854d79d39f3108 # v1.8.12
         with:
           shell: vulnerable
 
