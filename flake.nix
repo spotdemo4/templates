@@ -27,70 +27,78 @@
     svelte-template.url = "github:spotdemo4/svelte-template";
   };
 
-  outputs = {
-    nixpkgs,
-    utils,
-    nur,
-    # templates
-    go-template,
-    svelte-template,
-    ...
-  }:
-    utils.lib.eachDefaultSystem (system: let
-      pkgs = import nixpkgs {
-        inherit system;
-        overlays = [
-          nur.overlays.packages
-          nur.overlays.libs
-        ];
-      };
-    in {
-      devShells = {
-        default = pkgs.mkShell {
-          shellHook = pkgs.shellhook.ref;
-        };
-
-        update = pkgs.mkShell {
-          packages = with pkgs; [
-            renovate
+  outputs =
+    {
+      nixpkgs,
+      utils,
+      nur,
+      # templates
+      go-template,
+      svelte-template,
+      ...
+    }:
+    utils.lib.eachDefaultSystem (
+      system:
+      let
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [
+            nur.overlays.packages
+            nur.overlays.libs
           ];
         };
+      in
+      {
+        devShells = {
+          default = pkgs.mkShell {
+            packages = with pkgs; [
+              nixfmt
+            ];
+            shellHook = pkgs.shellhook.ref;
+          };
 
-        vulnerable = pkgs.mkShell {
-          packages = with pkgs; [
-            flake-checker
-          ];
+          update = pkgs.mkShell {
+            packages = with pkgs; [
+              renovate
+            ];
+          };
+
+          vulnerable = pkgs.mkShell {
+            packages = with pkgs; [
+              flake-checker
+            ];
+          };
         };
-      };
 
-      checks = pkgs.lib.mkChecks {
-        nix = {
-          src = ./.;
-          deps = with pkgs; [
-            alejandra
-          ];
-          script = ''
-            alejandra -c .
-          '';
+        checks = pkgs.lib.mkChecks {
+          nix = {
+            src = ./.;
+            deps = with pkgs; [
+              nixfmt-tree
+            ];
+            script = ''
+              treefmt --ci
+            '';
+          };
+
+          actions = {
+            src = ./.;
+            deps = with pkgs; [
+              prettier
+              action-validator
+              renovate
+            ];
+            script = ''
+              prettier --check .
+              action-validator .github/**/*.yaml
+              renovate-config-validator .github/renovate.json
+            '';
+          };
         };
 
-        actions = {
-          src = ./.;
-          deps = with pkgs; [
-            prettier
-            action-validator
-            renovate
-          ];
-          script = ''
-            prettier --check .
-            action-validator .github/**/*.yaml
-            renovate-config-validator .github/renovate.json
-          '';
-        };
-      };
-
-      formatter = pkgs.alejandra;
-    })
+        formatter = pkgs.nixfmt-tree;
+      }
+    )
     // {
       templates = rec {
         default = go;
