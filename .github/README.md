@@ -23,6 +23,14 @@ nix flake init --template github:spotdemo4/templates#go
 nix flake init --template github:spotdemo4/templates#svelte
 ```
 
+### Node
+
+[github.com/spotdemo4/node-template](https://github.com/spotdemo4/node-template/)
+
+```elm
+nix flake init --template github:spotdemo4/templates#node
+```
+
 ## Recommendations
 
 - [direnv](https://direnv.net/)

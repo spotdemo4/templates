@@ -25,6 +25,7 @@
     # templates
     go-template.url = "github:spotdemo4/go-template";
     svelte-template.url = "github:spotdemo4/svelte-template";
+    node-template.url = "github:spotdemo4/node-template";
   };
 
   outputs =
@@ -32,9 +33,12 @@
       nixpkgs,
       utils,
       nur,
+
       # templates
       go-template,
       svelte-template,
+      node-template,
+
       ...
     }:
     utils.lib.eachDefaultSystem (
@@ -113,6 +117,12 @@
           path = svelte-template;
           description = "trev's svelte template";
           welcomeText = builtins.readFile "${svelte-template}/.github/README.md";
+        };
+
+        node = {
+          path = node-template;
+          description = "trev's node template";
+          welcomeText = builtins.readFile "${node-template}/.github/README.md";
         };
       };
     };
