@@ -31,6 +31,14 @@ nix flake init --template github:spotdemo4/templates#svelte
 nix flake init --template github:spotdemo4/templates#node
 ```
 
+### Rust
+
+[github.com/spotdemo4/rust-template](https://github.com/spotdemo4/rust-template/)
+
+```elm
+nix flake init --template github:spotdemo4/templates#rust
+```
+
 ## Recommendations
 
 - [direnv](https://direnv.net/)

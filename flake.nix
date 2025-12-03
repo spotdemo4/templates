@@ -26,6 +26,7 @@
     go-template.url = "github:spotdemo4/go-template";
     svelte-template.url = "github:spotdemo4/svelte-template";
     node-template.url = "github:spotdemo4/node-template";
+    rust-template.url = "github:spotdemo4/rust-template";
   };
 
   outputs =
@@ -38,6 +39,7 @@
       go-template,
       svelte-template,
       node-template,
+      rust-template,
 
       ...
     }:
@@ -123,6 +125,12 @@
           path = node-template;
           description = "trev's node template";
           welcomeText = builtins.readFile "${node-template}/.github/README.md";
+        };
+
+        rust = {
+          path = rust-template;
+          description = "trev's rust template";
+          welcomeText = builtins.readFile "${rust-template}/.github/README.md";
         };
       };
     };
