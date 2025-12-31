@@ -131,11 +131,11 @@
         "trev": "trev_2"
       },
       "locked": {
-        "lastModified": 1766732852,
-        "narHash": "sha256-mnJ8WZbVgwgvq8dB+1bf/+uAjOxtzfqxX92PpGV6o14=",
+        "lastModified": 1767164888,
+        "narHash": "sha256-/iI6m1OyvZ+gC25IG8PTCMcbCm3YMwSPxANdEiX/g/g=",
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "fc02bcea5651bf363c5aa9054c0190f4035e2b9d",
+        "rev": "acdf30f171bf561f6899aeaed0679d011fe764bb",
         "type": "github"
       },
       "original": {
@@ -152,11 +152,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1767000191,
-        "narHash": "sha256-aKHyGuSvOgorcP9Y8FsdtpWwxHTy5KJ65EJfVHl2ms8=",
+        "lastModified": 1767086481,
+        "narHash": "sha256-/T0VpLZh8OJCtOJ4NujhcEvALppjdF8YLhuSCVEnXWs=",
         "owner": "spotdemo4",
         "repo": "nur",
-        "rev": "56e649ecd531bc8b88e0884fa3d815a0d88096ba",
+        "rev": "8e525ac948b193944fd8818a703e8f7372171ef9",
         "type": "github"
       },
       "original": {
