@@ -152,11 +152,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1767259729,
-        "narHash": "sha256-fUYTFVklOg9AeTkjMrSpN2TPlQXXWw/OER+uIMcxSIM=",
+        "lastModified": 1767432024,
+        "narHash": "sha256-LXyKoPbVJI/RDDriz9T6dvxqZ2ae3vzbc7ZPBIJkuaM=",
         "owner": "spotdemo4",
         "repo": "nur",
-        "rev": "31a6f13e33c272d0a1242b1434eeef03536fa5ed",
+        "rev": "d6b867677773c2f3e61ec7701452b1a01f125d71",
         "type": "github"
       },
       "original": {
