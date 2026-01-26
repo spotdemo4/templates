@@ -17,10 +17,9 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Initialize
-        id: init
+      - id: init
+        name: Initialize
         uses: spotdemo4/nix-init@89cc283b1be6b8da56618c5737c0389b35b46ac3 # v1.21.3
 
       - name: Run checks
-        if: ${{ steps.init.outputs.duplicate != 'true' }}
         run: nix flake check

@@ -12,16 +12,17 @@ jobs:
   renovate:
     runs-on: ubuntu-latest
     steps:
-      - name: Initialize
-        id: init
-        uses: spotdemo4/nix-init@89cc283b1be6b8da56618c5737c0389b35b46ac3 # v1.21.3
+      - id: init
+        name: Initialize
+        uses: spotdemo4/nix-init@ed84640dc773603827ade8ecfd81c535733130ac # v1.21.4
         with:
           app_id: ${{ vars.CLIENT_ID }}
           app_key: ${{ secrets.PRIVATE_KEY }}
           shell: update
 
       - name: Renovate
+        run: renovate
         env:
           RENOVATE_CONFIG_FILE: .github/renovate.json
           RENOVATE_TOKEN: ${{ steps.init.outputs.token }}
-        run: renovate
+          LOG_LEVEL: ${{ runner.debug == '1' && 'debug' || 'info' }}
