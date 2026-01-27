@@ -19,7 +19,7 @@ jobs:
     steps:
       - id: init
         name: Initialize
-        uses: spotdemo4/nix-init@89cc283b1be6b8da56618c5737c0389b35b46ac3 # v1.21.3
+        uses: spotdemo4/nix-init@842337cdd1a41ced81cb88edfd632589ee53ad2d # v1.22.0
 
       - name: Run checks
         run: nix flake check
