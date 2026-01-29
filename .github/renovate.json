@@ -1,5 +1,5 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "$schema": "https://docs.renovatebot.com/renovate-global-schema.json",
 
   // self-hosted
   "onboarding": false,
@@ -11,7 +11,8 @@
   "extends": ["config:recommended"],
   "lockFileMaintenance": {
     "enabled": true,
-    "automerge": true
+    "automerge": true,
+    "schedule": ["at any time"]
   },
   "nix": {
     "enabled": true

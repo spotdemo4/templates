@@ -53,11 +53,12 @@
             nur.overlays.libs
           ];
         };
+        fs = pkgs.lib.fileset;
       in
       {
         devShells = {
           default = pkgs.mkShell {
-            name = "default";
+            name = "dev";
             shellHook = pkgs.shellhook.ref;
             packages = with pkgs; [
               nixfmt
@@ -81,7 +82,10 @@
 
         checks = pkgs.lib.mkChecks {
           nix = {
-            src = ./.;
+            src = fs.toSource {
+              root = ./.;
+              fileset = fs.fileFilter (file: file.hasExt "nix") ./.;
+            };
             deps = with pkgs; [
               nixfmt-tree
             ];
@@ -91,16 +95,43 @@
           };
 
           actions = {
-            src = ./.;
+            src = fs.toSource {
+              root = ./.github/workflows;
+              fileset = ./.github/workflows;
+            };
             deps = with pkgs; [
-              prettier
               action-validator
+              octoscan
+            ];
+            script = ''
+              action-validator **/*.yaml
+              octoscan scan .
+            '';
+          };
+
+          renovate = {
+            src = fs.toSource {
+              root = ./.github;
+              fileset = ./.github/renovate.json;
+            };
+            deps = with pkgs; [
               renovate
             ];
             script = ''
+              renovate-config-validator renovate.json
+            '';
+          };
+
+          prettier = {
+            src = fs.toSource {
+              root = ./.;
+              fileset = fs.fileFilter (file: file.hasExt "yaml" || file.hasExt "json" || file.hasExt "md") ./.;
+            };
+            deps = with pkgs; [
+              prettier
+            ];
+            script = ''
               prettier --check .
-              action-validator .github/**/*.yaml
-              renovate-config-validator .github/renovate.json
             '';
           };
         };

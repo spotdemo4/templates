@@ -3,13 +3,13 @@
 ![check](https://github.com/spotdemo4/templates/actions/workflows/check.yaml/badge.svg)
 ![vulnerable](https://github.com/spotdemo4/templates/actions/workflows/vulnerable.yaml/badge.svg)
 
-Jumping off templates for various languages. Includes automated updates, testing and releasing. Built around [nix](https://nixos.org/) flakes.
+Jumping off templates for various languages. Includes automated formatting, linting, updates and releases. Built around [nix](https://nixos.org/) flakes.
 
 ## Languages
 
 ### Go
 
-[github.com/spotdemo4/go-template](https://github.com/spotdemo4/go-template/)
+[spotdemo4/go-template](https://github.com/spotdemo4/go-template/)
 
 ```elm
 nix flake init --template github:spotdemo4/templates#go
@@ -17,7 +17,7 @@ nix flake init --template github:spotdemo4/templates#go
 
 ### Svelte
 
-[github.com/spotdemo4/svelte-template](https://github.com/spotdemo4/svelte-template/)
+[spotdemo4/svelte-template](https://github.com/spotdemo4/svelte-template/)
 
 ```elm
 nix flake init --template github:spotdemo4/templates#svelte
@@ -25,7 +25,7 @@ nix flake init --template github:spotdemo4/templates#svelte
 
 ### Node
 
-[github.com/spotdemo4/node-template](https://github.com/spotdemo4/node-template/)
+[spotdemo4/node-template](https://github.com/spotdemo4/node-template/)
 
 ```elm
 nix flake init --template github:spotdemo4/templates#node
@@ -33,7 +33,7 @@ nix flake init --template github:spotdemo4/templates#node
 
 ### Rust
 
-[github.com/spotdemo4/rust-template](https://github.com/spotdemo4/rust-template/)
+[spotdemo4/rust-template](https://github.com/spotdemo4/rust-template/)
 
 ```elm
 nix flake init --template github:spotdemo4/templates#rust
