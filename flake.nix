@@ -13,28 +13,61 @@
   inputs = {
     systems.url = "github:nix-systems/default";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    utils = {
-      url = "github:numtide/flake-utils";
-      inputs.systems.follows = "systems";
-    };
-    nur = {
+    trev = {
       url = "github:spotdemo4/nur";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+      };
     };
 
     # templates
-    go-template.url = "github:spotdemo4/go-template";
-    svelte-template.url = "github:spotdemo4/svelte-template";
-    node-template.url = "github:spotdemo4/node-template";
-    rust-template.url = "github:spotdemo4/rust-template";
-    python-template.url = "github:spotdemo4/python-template";
+    go-template = {
+      url = "github:spotdemo4/go-template";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trev.follows = "trev";
+      };
+    };
+    svelte-template = {
+      url = "github:spotdemo4/svelte-template";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trev.follows = "trev";
+      };
+    };
+    node-template = {
+      url = "github:spotdemo4/node-template";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trev.follows = "trev";
+      };
+    };
+    rust-template = {
+      url = "github:spotdemo4/rust-template";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trev.follows = "trev";
+      };
+    };
+    python-template = {
+      url = "github:spotdemo4/python-template";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trev.follows = "trev";
+      };
+    };
   };
 
   outputs =
     {
       nixpkgs,
-      utils,
-      nur,
+      trev,
 
       # templates
       go-template,
@@ -45,14 +78,14 @@
 
       ...
     }:
-    utils.lib.eachDefaultSystem (
+    trev.libs.mkFlake (
       system:
       let
         pkgs = import nixpkgs {
           inherit system;
           overlays = [
-            nur.overlays.packages
-            nur.overlays.libs
+            trev.overlays.packages
+            trev.overlays.libs
           ];
         };
         fs = pkgs.lib.fileset;
