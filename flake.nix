@@ -27,6 +27,7 @@
     svelte-template.url = "github:spotdemo4/svelte-template";
     node-template.url = "github:spotdemo4/node-template";
     rust-template.url = "github:spotdemo4/rust-template";
+    python-template.url = "github:spotdemo4/python-template";
   };
 
   outputs =
@@ -40,6 +41,7 @@
       svelte-template,
       node-template,
       rust-template,
+      python-template,
 
       ...
     }:
@@ -165,6 +167,12 @@
           path = rust-template;
           description = "trev's rust template";
           welcomeText = builtins.readFile "${rust-template}/.github/README.md";
+        };
+
+        python = {
+          path = python-template;
+          description = "trev's python template";
+          welcomeText = builtins.readFile "${python-template}/.github/README.md";
         };
       };
     };

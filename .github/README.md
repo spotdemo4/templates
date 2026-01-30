@@ -39,6 +39,14 @@ nix flake init --template github:spotdemo4/templates#node
 nix flake init --template github:spotdemo4/templates#rust
 ```
 
+### Python
+
+[spotdemo4/python-template](https://github.com/spotdemo4/python-template/)
+
+```elm
+nix flake init --template github:spotdemo4/templates#python
+```
+
 ## Recommendations
 
 - [direnv](https://direnv.net/)

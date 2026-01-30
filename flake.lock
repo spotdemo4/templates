@@ -108,6 +108,22 @@
     },
     "nixpkgs_5": {
       "locked": {
+        "lastModified": 1769527094,
+        "narHash": "sha256-xV20Alb7ZGN7qujnsi5lG1NckSUmpIb05H2Xar73TDc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "afce96367b2e37fc29afb5543573cd49db3357b7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_6": {
+      "locked": {
         "lastModified": 1769433173,
         "narHash": "sha256-Gf1dFYgD344WZ3q0LPlRoWaNdNQq8kSBDLEWulRQSEs=",
         "owner": "nixos",
@@ -163,15 +179,36 @@
         "type": "github"
       }
     },
+    "python-template": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4",
+        "systems": "systems_4",
+        "trev": "trev_3"
+      },
+      "locked": {
+        "lastModified": 1769772313,
+        "narHash": "sha256-C/3SDF+CzqQYk7UQfaxC5d17VEj7p8Y09w4Skd2qtSo=",
+        "owner": "spotdemo4",
+        "repo": "python-template",
+        "rev": "560c31c03162147d11aa097c5b6755d11625ba62",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spotdemo4",
+        "repo": "python-template",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "go-template": "go-template",
         "nixpkgs": "nixpkgs_2",
         "node-template": "node-template",
         "nur": "nur",
+        "python-template": "python-template",
         "rust-template": "rust-template",
         "svelte-template": "svelte-template",
-        "systems": "systems_6",
+        "systems": "systems_7",
         "utils": "utils"
       }
     },
@@ -195,9 +232,9 @@
     "rust-template": {
       "inputs": {
         "fenix": "fenix",
-        "nixpkgs": "nixpkgs_4",
-        "systems": "systems_4",
-        "trev": "trev_3"
+        "nixpkgs": "nixpkgs_5",
+        "systems": "systems_5",
+        "trev": "trev_4"
       },
       "locked": {
         "lastModified": 1769724728,
@@ -215,9 +252,9 @@
     },
     "svelte-template": {
       "inputs": {
-        "nixpkgs": "nixpkgs_5",
-        "systems": "systems_5",
-        "trev": "trev_4"
+        "nixpkgs": "nixpkgs_6",
+        "systems": "systems_6",
+        "trev": "trev_5"
       },
       "locked": {
         "lastModified": 1769689493,
@@ -323,6 +360,21 @@
         "type": "github"
       }
     },
+    "systems_7": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
     "trev": {
       "inputs": {
         "nixpkgs": [
@@ -376,6 +428,31 @@
     "trev_3": {
       "inputs": {
         "nixpkgs": [
+          "python-template",
+          "nixpkgs"
+        ],
+        "systems": [
+          "python-template",
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1769697349,
+        "narHash": "sha256-uEQ7+uftVxxNDMIg9pLcyErr7VKhhbh5NnzAjK7dJNI=",
+        "owner": "spotdemo4",
+        "repo": "nur",
+        "rev": "9de9867f0339a5f07e28f566f69dd888fc70b36f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spotdemo4",
+        "repo": "nur",
+        "type": "github"
+      }
+    },
+    "trev_4": {
+      "inputs": {
+        "nixpkgs": [
           "rust-template",
           "nixpkgs"
         ],
@@ -398,7 +475,7 @@
         "type": "github"
       }
     },
-    "trev_4": {
+    "trev_5": {
       "inputs": {
         "nixpkgs": [
           "svelte-template",
