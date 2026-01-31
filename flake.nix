@@ -62,6 +62,14 @@
         trev.follows = "trev";
       };
     };
+    template = {
+      url = "github:spotdemo4/template";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trev.follows = "trev";
+      };
+    };
   };
 
   outputs =
@@ -75,6 +83,7 @@
       node-template,
       rust-template,
       python-template,
+      template,
 
       ...
     }:
@@ -175,9 +184,7 @@
       }
     )
     // {
-      templates = rec {
-        default = go;
-
+      templates = {
         go = {
           path = go-template;
           description = "trev's go template";
@@ -206,6 +213,12 @@
           path = python-template;
           description = "trev's python template";
           welcomeText = builtins.readFile "${python-template}/.github/README.md";
+        };
+
+        default = {
+          path = template;
+          description = "trev's default template";
+          welcomeText = builtins.readFile "${template}/.github/README.md";
         };
       };
     };
