@@ -23,12 +23,12 @@
       "automerge": true
     },
     {
-      "groupName": "Nix Inputs",
-      "matchManagers": ["nix"]
+      "matchManagers": ["nix"],
+      "groupName": "Nix Inputs"
     },
     {
-      "groupName": "GitHub Actions",
-      "matchManagers": ["github-actions"]
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions"
     }
   ]
 }
