@@ -186,11 +186,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1771060292,
-        "narHash": "sha256-ZWrGZMscTnnjq3P+Pm8Y/K/LdS9I4cIaQBbVS6KTLtw=",
+        "lastModified": 1771126063,
+        "narHash": "sha256-rdHNkL+olFj6kCVZBBSDMymynVvtp/MxPszAoBZNMvI=",
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "f41266666fc7ecb3207e93b3bac0acff455c86a4",
+        "rev": "93e1a06fd6e7d9f68cd660af67b7cd9d40ad13ba",
         "type": "github"
       },
       "original": {
@@ -250,11 +250,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1770976990,
-        "narHash": "sha256-WcPHUP0Blk9NPS9RY4mGWKvRVeiHIBL1IDAiAvIAAmg=",
+        "lastModified": 1771061866,
+        "narHash": "sha256-SLzo+BU17nqHqt5JcawTib6TsOrqcwceh1oV5BP9eXs=",
         "owner": "spotdemo4",
         "repo": "nur",
-        "rev": "526c9a1ac6f8670782e7ca44de72846ec306a1d0",
+        "rev": "71d1911678e4694f852cd1976bf95bb5d89b9d2b",
         "type": "github"
       },
       "original": {
