@@ -62,6 +62,14 @@
         trev.follows = "trev";
       };
     };
+    gleam-template = {
+      url = "github:spotdemo4/gleam-template";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trev.follows = "trev";
+      };
+    };
     template = {
       url = "github:spotdemo4/template";
       inputs = {
@@ -83,6 +91,7 @@
       node-template,
       rust-template,
       python-template,
+      gleam-template,
       template,
 
       ...
@@ -210,6 +219,12 @@
           path = python-template;
           description = "trev's python template";
           welcomeText = builtins.readFile "${python-template}/.github/README.md";
+        };
+
+        gleam = {
+          path = gleam-template;
+          description = "trev's gleam template";
+          welcomeText = builtins.readFile "${gleam-template}/.github/README.md";
         };
 
         default = {
