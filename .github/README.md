@@ -1,7 +1,7 @@
 # nix dev templates
 
-![check](https://github.com/spotdemo4/templates/actions/workflows/check.yaml/badge.svg)
-![vulnerable](https://github.com/spotdemo4/templates/actions/workflows/vulnerable.yaml/badge.svg)
+[![check](https://img.shields.io/github/actions/workflow/status/spotdemo4/templates/check.yaml?branch=main&logo=github&logoColor=%23bac2de&label=check&labelColor=%23313244)](https://github.com/spotdemo4/templates/actions/workflows/check.yaml/)
+[![vulnerable](https://img.shields.io/github/actions/workflow/status/spotdemo4/templates/vulnerable.yaml?branch=main&logo=github&logoColor=%23bac2de&label=vulnerable&labelColor=%23313244)](https://github.com/spotdemo4/templates/actions/workflows/vulnerable.yaml)
 
 Jumping off templates for various languages. Includes automated formatting, linting, updates and releases. Built around [nix](https://nixos.org/) flakes.
 
@@ -12,7 +12,7 @@ Jumping off templates for various languages. Includes automated formatting, lint
 [spotdemo4/go-template](https://github.com/spotdemo4/go-template/)
 
 ```elm
-nix flake init --template github:spotdemo4/templates#go
+nix flake init -t github:spotdemo4/templates#go
 ```
 
 ### Svelte
@@ -20,7 +20,7 @@ nix flake init --template github:spotdemo4/templates#go
 [spotdemo4/svelte-template](https://github.com/spotdemo4/svelte-template/)
 
 ```elm
-nix flake init --template github:spotdemo4/templates#svelte
+nix flake init -t github:spotdemo4/templates#svelte
 ```
 
 ### Node
@@ -28,7 +28,7 @@ nix flake init --template github:spotdemo4/templates#svelte
 [spotdemo4/node-template](https://github.com/spotdemo4/node-template/)
 
 ```elm
-nix flake init --template github:spotdemo4/templates#node
+nix flake init -t github:spotdemo4/templates#node
 ```
 
 ### Rust
@@ -36,7 +36,7 @@ nix flake init --template github:spotdemo4/templates#node
 [spotdemo4/rust-template](https://github.com/spotdemo4/rust-template/)
 
 ```elm
-nix flake init --template github:spotdemo4/templates#rust
+nix flake init -t github:spotdemo4/templates#rust
 ```
 
 ### Python
@@ -44,7 +44,7 @@ nix flake init --template github:spotdemo4/templates#rust
 [spotdemo4/python-template](https://github.com/spotdemo4/python-template/)
 
 ```elm
-nix flake init --template github:spotdemo4/templates#python
+nix flake init -t github:spotdemo4/templates#python
 ```
 
 ### Gleam
@@ -52,7 +52,7 @@ nix flake init --template github:spotdemo4/templates#python
 [spotdemo4/gleam-template](https://github.com/spotdemo4/gleam-template/)
 
 ```elm
-nix flake init --template github:spotdemo4/templates#gleam
+nix flake init -t github:spotdemo4/templates#gleam
 ```
 
 ### Default
@@ -60,7 +60,7 @@ nix flake init --template github:spotdemo4/templates#gleam
 [spotdemo4/template](https://github.com/spotdemo4/template/)
 
 ```elm
-nix flake init --template github:spotdemo4/templates
+nix flake init -t github:spotdemo4/templates
 ```
 
 ## Recommendations

@@ -12,7 +12,7 @@
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
-    "schedule": ["at any time"]
+    "schedule": ["* * * * 0"] // sunday
   },
   "nix": {
     "enabled": true
@@ -24,11 +24,11 @@
     },
     {
       "matchManagers": ["nix"],
-      "groupName": "Nix Inputs"
+      "groupName": "nix inputs"
     },
     {
       "matchManagers": ["github-actions"],
-      "groupName": "GitHub Actions"
+      "groupName": "github actions"
     }
   ]
 }
