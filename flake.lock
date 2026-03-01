@@ -9,11 +9,11 @@
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
-        "lastModified": 1771743970,
-        "narHash": "sha256-eri4eY0fUouYxBgWxJAJzG+xTGXVI7VeNJGcJrqpEt0=",
+        "lastModified": 1772348640,
+        "narHash": "sha256-caiKs7O4khFydpKyg8O8/nmvw/NfN4fn/4spageGoig=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "2af8ae8bbe91833a54bd3b9cc24c326b66972a8e",
+        "rev": "47c5355eaba0b08836e720d5d545c8ea1e1783db",
         "type": "github"
       },
       "original": {
@@ -35,17 +35,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1771924560,
-        "narHash": "sha256-5VU3WbZ49ze4mTrZYzMMkDu6UvjEXFWBNZqxV6PSmQA=",
+        "lastModified": 1772356000,
+        "narHash": "sha256-zjbXVJsPLpl/CwUaZGTdqO/fzQ16WPd/umYGQ/e/8mQ=",
         "owner": "spotdemo4",
         "repo": "gleam-template",
-        "rev": "321a68c5eb990d30b1aba1692104ef2637677c66",
+        "rev": "66f83e509631becafa690fbe09320a12fa597533",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "gleam-template",
-        "rev": "321a68c5eb990d30b1aba1692104ef2637677c66",
+        "rev": "66f83e509631becafa690fbe09320a12fa597533",
         "type": "github"
       }
     },
@@ -105,17 +105,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1772183887,
-        "narHash": "sha256-EIjpwwcyVMAD1d/hivS/Nb1W1AKyGwwu8FYXr55F+Pk=",
+        "lastModified": 1772270097,
+        "narHash": "sha256-cho3T36RYDwnZDgbe1znSrIqqfUrZ5sZv9WEBf3N3hM=",
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "38a7917311a773e04aeab505e4e88dafb336ec8c",
+        "rev": "cb87ba000197b298150ab43b5f18bd3eb2c280fd",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "38a7917311a773e04aeab505e4e88dafb336ec8c",
+        "rev": "cb87ba000197b298150ab43b5f18bd3eb2c280fd",
         "type": "github"
       }
     },
@@ -163,11 +163,11 @@
     "rust-analyzer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1771639390,
-        "narHash": "sha256-igbphgls7JmrblWCIbgBGcL/ZWj0Iv+InySvuhLC5Ew=",
+        "lastModified": 1772310333,
+        "narHash": "sha256-njFwHnxYcfQINwSa+XWhenv8s8PMg/j5ID0HpIa49xM=",
         "owner": "rust-lang",
         "repo": "rust-analyzer",
-        "rev": "af68fc6e782f218c262a8e7e5718ce7276f697a2",
+        "rev": "a96b6a9b887008bae01839543f9ca8e1f67f4ebe",
         "type": "github"
       },
       "original": {
@@ -191,17 +191,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1771924650,
-        "narHash": "sha256-YFpxiLeiFLF+IA6x5krUSZ4s+jFmNgz4ilg0QtFFyGs=",
+        "lastModified": 1772356060,
+        "narHash": "sha256-8OhkzAHSvStfVFMw/eRtgi4axqlCtgzqfEVW/pMsdWk=",
         "owner": "spotdemo4",
         "repo": "rust-template",
-        "rev": "269cf8a14af8a46549eccb68b448850bc4117b20",
+        "rev": "a63c2493b8c68085b8d3f3ffbafcc265cc13055a",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "rust-template",
-        "rev": "269cf8a14af8a46549eccb68b448850bc4117b20",
+        "rev": "a63c2493b8c68085b8d3f3ffbafcc265cc13055a",
         "type": "github"
       }
     },
@@ -218,17 +218,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1772183828,
-        "narHash": "sha256-40depbDQcAZnFzbWR3cf/kstIs3ryRoutKmP9RYqkdo=",
+        "lastModified": 1772269751,
+        "narHash": "sha256-vXU9cRrmR7HL5poXDV/2DDvts4rbyHXhYsZqbfQESko=",
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "24a568d790a7c2532aaade0ea2b4ed131419f321",
+        "rev": "0b52eec787cba19536d828ce95d2c3bbc4340c9c",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "24a568d790a7c2532aaade0ea2b4ed131419f321",
+        "rev": "0b52eec787cba19536d828ce95d2c3bbc4340c9c",
         "type": "github"
       }
     },
