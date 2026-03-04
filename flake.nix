@@ -55,7 +55,7 @@
       };
     };
     python-template = {
-      url = "github:spotdemo4/python-template/6e1f180dcde1f87ec40b746db230f003056ffe22";
+      url = "github:spotdemo4/python-template/23d3e98316588fa512b279455c6b3437e6cf7956";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
