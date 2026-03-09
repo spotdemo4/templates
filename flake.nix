@@ -70,6 +70,14 @@
         trev.follows = "trev";
       };
     };
+    zig-template = {
+      url = "github:spotdemo4/zig-template/50659af6f35a0ead0ff8a046426739b6b0180d12";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trev.follows = "trev";
+      };
+    };
     template = {
       url = "github:spotdemo4/template/39c864eb4e2cead6d6c81cfd3e176d24a46f6d50";
       inputs = {

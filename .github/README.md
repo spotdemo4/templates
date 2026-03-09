@@ -55,6 +55,14 @@ nix flake init -t github:spotdemo4/templates#python
 nix flake init -t github:spotdemo4/templates#gleam
 ```
 
+### Zig
+
+[spotdemo4/zig-template](https://github.com/spotdemo4/zig-template/)
+
+```elm
+nix flake init -t github:spotdemo4/templates#zig
+```
+
 ### Default
 
 [spotdemo4/template](https://github.com/spotdemo4/template/)
