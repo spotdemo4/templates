@@ -100,6 +100,7 @@
       rust-template,
       python-template,
       gleam-template,
+      zig-template,
       template,
 
       ...
@@ -233,6 +234,12 @@
           path = gleam-template;
           description = "trev's gleam template";
           welcomeText = builtins.readFile "${gleam-template}/.github/README.md";
+        };
+
+        zig = {
+          path = zig-template;
+          description = "trev's zig template";
+          welcomeText = builtins.readFile "${zig-template}/.github/README.md";
         };
 
         default = {
