@@ -23,7 +23,7 @@
 
     # templates
     go-template = {
-      url = "github:spotdemo4/go-template/15c5abc96002b347958fbc70ae0fa6fb11341bee";
+      url = "github:spotdemo4/go-template/fe075b2c19df1175949a07559a2b7e34fa1c32d3";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -31,7 +31,7 @@
       };
     };
     svelte-template = {
-      url = "github:spotdemo4/svelte-template/a664928d7a8965ace757d92b17c15b5f9bc537b0";
+      url = "github:spotdemo4/svelte-template/a252bb1d37f0120de42774b5644de51e6c5745ee";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
