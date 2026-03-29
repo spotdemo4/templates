@@ -175,7 +175,31 @@
           };
         };
 
-        schemas = trev.schemas;
+        schemas = trev.schemas // {
+          templates =
+            let
+              mkChildren = children: { inherit children; };
+            in
+            {
+              version = 1;
+              doc = ''
+                The `templates` output provides project templates.
+              '';
+              roles.nix-template = { };
+              defaultAttrPath = [ "default" ];
+              inventory =
+                output:
+                mkChildren (
+                  builtins.mapAttrs (templateName: template: {
+                    shortDescription = template.description or "";
+                    evalChecks.isValidTemplate =
+                      template ? path && template ? description && builtins.isString template.description;
+                    what = "template";
+                  }) output
+                );
+            };
+        };
+
         formatter = pkgs.nixfmt-tree;
       }
     )
