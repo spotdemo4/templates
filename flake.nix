@@ -63,7 +63,7 @@
       };
     };
     gleam-template = {
-      url = "github:spotdemo4/gleam-template/49a2c0d2cdee6c9ef3ff95ed86113eef5e99e63e";
+      url = "github:spotdemo4/gleam-template/14b24b55c75faf6843c23ebf260460aff5ab1b63";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
