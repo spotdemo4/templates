@@ -39,7 +39,7 @@
       };
     };
     node-template = {
-      url = "github:spotdemo4/node-template/3802b2a4a0b7237bf5af4067dad5ca7fdc2cc36e";
+      url = "github:spotdemo4/node-template/2755219c1eb1e3c962be7a81f4f6d617cd32be9e";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -55,7 +55,7 @@
       };
     };
     python-template = {
-      url = "github:spotdemo4/python-template/8f654277c70475e7a0225f8dbc419e0d26f1b2ad";
+      url = "github:spotdemo4/python-template/1cac27e0f536e976e99ce25cbb988ceae6f98f6f";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
