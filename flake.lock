@@ -194,17 +194,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1775727099,
-        "narHash": "sha256-udEHGzPL3vyBQvyetOYaPpcsDxs+RDei0H+OkcyUwFE=",
+        "lastModified": 1775813466,
+        "narHash": "sha256-r8w6rc/666XCfbyIdA7PT9eaD6NCSP7g3kTCwv+8500=",
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "c1d5309ca2a134e02ebca2fd9898129916fe490b",
+        "rev": "077e649048b980b2f4fe6b6e79342920b904f50a",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "c1d5309ca2a134e02ebca2fd9898129916fe490b",
+        "rev": "077e649048b980b2f4fe6b6e79342920b904f50a",
         "type": "github"
       }
     },
