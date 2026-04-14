@@ -13,17 +13,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1775985339,
-        "narHash": "sha256-GZJFQORDkcAZ6Dd/GHty7uAX475MdtIJkG9y677EXEg=",
+        "lastModified": 1776158973,
+        "narHash": "sha256-wkhEjmSpBkGqW1mzwKwayGs/6FhzxJjX7d/oK/p/Jms=",
         "owner": "spotdemo4",
         "repo": "gleam-template",
-        "rev": "db18ce304762627be83df3aa23c0ad54fd9f69f9",
+        "rev": "f68e10ea9af4cac0a0507ffbdd2f15635e5f0df7",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "gleam-template",
-        "rev": "db18ce304762627be83df3aa23c0ad54fd9f69f9",
+        "rev": "f68e10ea9af4cac0a0507ffbdd2f15635e5f0df7",
         "type": "github"
       }
     },
@@ -152,17 +152,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1775985341,
-        "narHash": "sha256-0kb/fnL4S6D8O6BqZQloB1OGqBontXlogx6J36633XU=",
+        "lastModified": 1776158978,
+        "narHash": "sha256-wdehBTBEptAcOC7KpalHQx04/3zCtBRhMP3X0lsUZks=",
         "owner": "spotdemo4",
         "repo": "rust-template",
-        "rev": "7a915c43c9baa445cf86f3e8fc3e14750e7ead42",
+        "rev": "747668c6fe1e0c3c92dbca6a19ada9444a7b5f05",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "rust-template",
-        "rev": "7a915c43c9baa445cf86f3e8fc3e14750e7ead42",
+        "rev": "747668c6fe1e0c3c92dbca6a19ada9444a7b5f05",
         "type": "github"
       }
     },
@@ -194,17 +194,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1775985595,
-        "narHash": "sha256-PD5XsW0l4Sfr1bRlenskWk77pbQ0ULoFppI3OJni/xQ=",
+        "lastModified": 1776159313,
+        "narHash": "sha256-xgcpcvImbs8lflLdVeqxIaAhiSkxeZEfZ9XwsxdmrMM=",
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "5a41a482138fb77784327570196268bd67a30fd2",
+        "rev": "f8375040f9d88865fa932297e1bfd3f8a5fc8ec1",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "5a41a482138fb77784327570196268bd67a30fd2",
+        "rev": "f8375040f9d88865fa932297e1bfd3f8a5fc8ec1",
         "type": "github"
       }
     },
