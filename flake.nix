@@ -31,7 +31,7 @@
       };
     };
     svelte-template = {
-      url = "github:spotdemo4/svelte-template/5a41a482138fb77784327570196268bd67a30fd2";
+      url = "github:spotdemo4/svelte-template/f8375040f9d88865fa932297e1bfd3f8a5fc8ec1";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -47,7 +47,7 @@
       };
     };
     rust-template = {
-      url = "github:spotdemo4/rust-template/7a915c43c9baa445cf86f3e8fc3e14750e7ead42";
+      url = "github:spotdemo4/rust-template/747668c6fe1e0c3c92dbca6a19ada9444a7b5f05";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -63,7 +63,7 @@
       };
     };
     gleam-template = {
-      url = "github:spotdemo4/gleam-template/db18ce304762627be83df3aa23c0ad54fd9f69f9";
+      url = "github:spotdemo4/gleam-template/f68e10ea9af4cac0a0507ffbdd2f15635e5f0df7";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
