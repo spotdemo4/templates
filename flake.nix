@@ -110,6 +110,12 @@
           default = pkgs.mkShell {
             shellHook = pkgs.shellhook.ref;
             packages = with pkgs; [
+              # lint
+              nixd
+
+              # format
+              treefmt
+              prettier
               nixfmt
             ];
           };
@@ -122,33 +128,29 @@
 
           vulnerable = pkgs.mkShell {
             packages = with pkgs; [
-              flake-checker
+              flake-checker # nix
+              zizmor # actions
             ];
           };
         };
 
+        formatter = pkgs.treefmt.withConfig {
+          configFile = ./treefmt.toml;
+          runtimeInputs = with pkgs; [
+            prettier
+            nixfmt
+          ];
+        };
+
         checks = pkgs.mkChecks {
-          actions = {
+          prettier = {
             root = ./.;
-            fileset = ./.github/workflows;
+            filter = file: file.hasExt "yaml" || file.hasExt "json" || file.hasExt "md";
             deps = with pkgs; [
-              action-validator
-              octoscan
+              prettier
             ];
             forEach = ''
-              action-validator "$file"
-              octoscan scan "$file"
-            '';
-          };
-
-          renovate = {
-            root = ./.github;
-            fileset = ./.github/renovate.json;
-            deps = with pkgs; [
-              renovate
-            ];
-            script = ''
-              renovate-config-validator renovate.json
+              prettier --check "$file"
             '';
           };
 
@@ -163,14 +165,27 @@
             '';
           };
 
-          prettier = {
-            root = ./.;
-            filter = file: file.hasExt "yaml" || file.hasExt "json" || file.hasExt "md";
+          actions = {
+            root = ./.github/workflows;
+            filter = file: file.hasExt "yaml";
             deps = with pkgs; [
-              prettier
+              action-validator
+              zizmor
             ];
             forEach = ''
-              prettier --check "$file"
+              action-validator "$file"
+              zizmor --offline "$file"
+            '';
+          };
+
+          renovate = {
+            root = ./.github;
+            fileset = ./.github/renovate.json;
+            deps = with pkgs; [
+              renovate
+            ];
+            script = ''
+              renovate-config-validator renovate.json
             '';
           };
         };
@@ -249,8 +264,6 @@
                 );
             };
         };
-
-        formatter = pkgs.nixfmt-tree;
       }
     );
 }

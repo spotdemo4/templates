@@ -12,11 +12,12 @@ concurrency:
 
 permissions:
   contents: read
-  id-token: write
 
 jobs:
   check:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - name: Initialize
         uses: spotdemo4/nix-init@78cb37091fca621cf273ed076027ebfbaf906457 # v1.44.2

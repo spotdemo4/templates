@@ -1,0 +1,10 @@
+#:schema https://www.schemastore.org/treefmt.json
+
+[formatter.prettier]
+command = "prettier"
+options = ["--write"]
+includes = ["*.yaml", "*.json", "*.md"]
+
+[formatter.nix]
+command = "nixfmt"
+includes = ["*.nix"]
