@@ -78,22 +78,20 @@
         "systems": [
           "systems"
         ],
-        "trev": [
-          "trev"
-        ]
+        "trevpkgs": "trevpkgs"
       },
       "locked": {
-        "lastModified": 1777542460,
-        "narHash": "sha256-L4nkqW2JHYjiL4n9ixnwuXehiEX0Fx1W5KU+V7LwmMA=",
+        "lastModified": 1777670236,
+        "narHash": "sha256-C33VN+UnOpsBDYLEkJc7ddABn9qYFMM/AW+2tFppNso=",
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "6e7f5c49c5a0d98acc34ca43fd90bf7a0fcc82e2",
+        "rev": "925f607992f3e263e2054c64f6c33239a33e3e4e",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "6e7f5c49c5a0d98acc34ca43fd90bf7a0fcc82e2",
+        "rev": "925f607992f3e263e2054c64f6c33239a33e3e4e",
         "type": "github"
       }
     },
@@ -181,6 +179,21 @@
         "type": "github"
       }
     },
+    "schema_2": {
+      "locked": {
+        "lastModified": 1776384880,
+        "narHash": "sha256-28Cg9HI/IwFHUm5fZyMEGCQ94L3Il6K4OfHeRf0b+Zw=",
+        "owner": "DeterminateSystems",
+        "repo": "flake-schemas",
+        "rev": "b852751d29c6e09919f25c1e10754646bdc181c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DeterminateSystems",
+        "repo": "flake-schemas",
+        "type": "github"
+      }
+    },
     "svelte-template": {
       "inputs": {
         "nixpkgs": [
@@ -194,17 +207,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1777501016,
-        "narHash": "sha256-hWUOcDwsMLRx8AidRf3FdwJz+32BaH5VK7sGacwX3Ok=",
+        "lastModified": 1777628194,
+        "narHash": "sha256-no8/y5PlaTjMoQbdJLCoSxz0fnmhqzPU9/BJ8ASCHvQ=",
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "bf1e95b14d047267bd3addb25bf322a78a521be9",
+        "rev": "019d1c93cdb8b6d8650daef0ff14ddbd82edd951",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "svelte-template",
-        "rev": "bf1e95b14d047267bd3addb25bf322a78a521be9",
+        "rev": "019d1c93cdb8b6d8650daef0ff14ddbd82edd951",
         "type": "github"
       }
     },
@@ -255,7 +268,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "schema": "schema",
+        "schema": "schema_2",
         "systems": [
           "systems"
         ]
@@ -271,6 +284,32 @@
       "original": {
         "owner": "spotdemo4",
         "repo": "nur",
+        "type": "github"
+      }
+    },
+    "trevpkgs": {
+      "inputs": {
+        "nixpkgs": [
+          "node-template",
+          "nixpkgs"
+        ],
+        "schema": "schema",
+        "systems": [
+          "node-template",
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1777669570,
+        "narHash": "sha256-FIdJivwjK17VTeBiPedzd5OOQWeModj1jjvZfBEkObY=",
+        "owner": "spotdemo4",
+        "repo": "trevpkgs",
+        "rev": "c6ca1393d289014cbea6c04b3e0ea56638d60053",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spotdemo4",
+        "repo": "trevpkgs",
         "type": "github"
       }
     },
