@@ -78,6 +78,14 @@
         trevpkgs.follows = "trevpkgs";
       };
     };
+    cpp-template = {
+      url = "github:spotdemo4/cpp-template/e077df125ce310c9b540142d9bcdbb6984a19071";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trevpkgs.follows = "trevpkgs";
+      };
+    };
     template = {
       url = "github:spotdemo4/template/9215b2df87cc4d207d9f6dc644c76c3f5790fab2";
       inputs = {
@@ -100,6 +108,7 @@
       python-template,
       gleam-template,
       zig-template,
+      cpp-template,
       template,
 
       ...
@@ -231,6 +240,12 @@
             path = zig-template;
             description = "trev's zig template";
             welcomeText = builtins.readFile "${zig-template}/README.md";
+          };
+
+          cpp = {
+            path = cpp-template;
+            description = "trev's cpp template";
+            welcomeText = builtins.readFile "${cpp-template}/README.md";
           };
 
           default = {

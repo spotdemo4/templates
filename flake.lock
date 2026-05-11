@@ -1,5 +1,32 @@
 {
   "nodes": {
+    "cpp-template": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": [
+          "systems"
+        ],
+        "trevpkgs": [
+          "trevpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1778519458,
+        "narHash": "sha256-uGuayvfLqQ5IGoqX2QfFfvqa3CReG0JPpcrrfoAfE8U=",
+        "owner": "spotdemo4",
+        "repo": "cpp-template",
+        "rev": "e077df125ce310c9b540142d9bcdbb6984a19071",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spotdemo4",
+        "repo": "cpp-template",
+        "rev": "e077df125ce310c9b540142d9bcdbb6984a19071",
+        "type": "github"
+      }
+    },
     "gleam-template": {
       "inputs": {
         "nixpkgs": [
@@ -126,6 +153,7 @@
     },
     "root": {
       "inputs": {
+        "cpp-template": "cpp-template",
         "gleam-template": "gleam-template",
         "go-template": "go-template",
         "nixpkgs": "nixpkgs",
