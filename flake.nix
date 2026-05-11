@@ -194,49 +194,49 @@
           go = {
             path = go-template;
             description = "trev's go template";
-            welcomeText = builtins.readFile "${go-template}/.github/README.md";
+            welcomeText = builtins.readFile "${go-template}/README.md";
           };
 
           svelte = {
             path = svelte-template;
             description = "trev's svelte template";
-            welcomeText = builtins.readFile "${svelte-template}/.github/README.md";
+            welcomeText = builtins.readFile "${svelte-template}/README.md";
           };
 
           node = {
             path = node-template;
             description = "trev's node template";
-            welcomeText = builtins.readFile "${node-template}/.github/README.md";
+            welcomeText = builtins.readFile "${node-template}/README.md";
           };
 
           rust = {
             path = rust-template;
             description = "trev's rust template";
-            welcomeText = builtins.readFile "${rust-template}/.github/README.md";
+            welcomeText = builtins.readFile "${rust-template}/README.md";
           };
 
           python = {
             path = python-template;
             description = "trev's python template";
-            welcomeText = builtins.readFile "${python-template}/.github/README.md";
+            welcomeText = builtins.readFile "${python-template}/README.md";
           };
 
           gleam = {
             path = gleam-template;
             description = "trev's gleam template";
-            welcomeText = builtins.readFile "${gleam-template}/.github/README.md";
+            welcomeText = builtins.readFile "${gleam-template}/README.md";
           };
 
           zig = {
             path = zig-template;
             description = "trev's zig template";
-            welcomeText = builtins.readFile "${zig-template}/.github/README.md";
+            welcomeText = builtins.readFile "${zig-template}/README.md";
           };
 
           default = {
             path = template;
             description = "trev's default template";
-            welcomeText = builtins.readFile "${template}/.github/README.md";
+            welcomeText = builtins.readFile "${template}/README.md";
           };
         };
 
