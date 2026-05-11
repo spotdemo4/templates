@@ -32,6 +32,7 @@ nix flake init -t github:spotdemo4/templates#go
 [![check](https://img.shields.io/github/actions/workflow/status/spotdemo4/svelte-template/check.yaml?branch=main&logo=github&logoColor=%23bac2de&label=check&labelColor=%23313244)](https://github.com/spotdemo4/svelte-template/actions/workflows/check.yaml)
 [![vulnerable](https://img.shields.io/github/actions/workflow/status/spotdemo4/svelte-template/vulnerable.yaml?branch=main&logo=github&logoColor=%23bac2de&label=vulnerable&labelColor=%23313244)](https://github.com/spotdemo4/svelte-template/actions/workflows/vulnerable.yaml)
 [![node](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fspotdemo4%2Fsvelte-template%2Frefs%2Fheads%2Fmain%2Fpackage.json&query=%24.engines.node&logo=nodedotjs&logoColor=%23bac2de&label=version&labelColor=%23313244&color=%23339933)](https://nodejs.org/en/about/previous-releases)
+[![svelte](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fspotdemo4%2Fsvelte-template%2Frefs%2Fheads%2Fmain%2Fpackage.json&query=%24.devDependencies.svelte&logo=svelte&logoColor=%23bac2de&label=version&labelColor=%23313244&color=%23FF3E00)](https://svelte-changelog.dev/package/svelte)
 
 [spotdemo4/svelte-template](https://github.com/spotdemo4/svelte-template/)
 
