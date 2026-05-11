@@ -13,8 +13,8 @@
   inputs = {
     systems.url = "github:spotdemo4/systems";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    trev = {
-      url = "github:spotdemo4/nur";
+    trevpkgs = {
+      url = "github:spotdemo4/trevpkgs";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -27,7 +27,7 @@
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
-        trev.follows = "trev";
+        trev.follows = "trevpkgs";
       };
     };
     svelte-template = {
@@ -35,7 +35,7 @@
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
-        trev.follows = "trev";
+        trev.follows = "trevpkgs";
       };
     };
     node-template = {
@@ -43,15 +43,15 @@
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
-        trev.follows = "trev";
+        trevpkgs.follows = "trevpkgs";
       };
     };
     rust-template = {
-      url = "github:spotdemo4/rust-template/3c80f636dd8b490a8a8c24ce4ca0b85faa6029ac";
+      url = "github:spotdemo4/rust-template/39795e092f8cc201d050013a58f2c82cf3b6858f";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
-        trev.follows = "trev";
+        trevpkgs.follows = "trevpkgs";
       };
     };
     python-template = {
@@ -59,7 +59,7 @@
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
-        trev.follows = "trev";
+        trev.follows = "trevpkgs";
       };
     };
     gleam-template = {
@@ -67,7 +67,7 @@
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
-        trev.follows = "trev";
+        trev.follows = "trevpkgs";
       };
     };
     zig-template = {
@@ -75,7 +75,7 @@
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
-        trev.follows = "trev";
+        trev.follows = "trevpkgs";
       };
     };
     template = {
@@ -83,14 +83,14 @@
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
-        trev.follows = "trev";
+        trev.follows = "trevpkgs";
       };
     };
   };
 
   outputs =
     {
-      trev,
+      trevpkgs,
 
       # templates
       go-template,
@@ -104,7 +104,7 @@
 
       ...
     }:
-    trev.libs.mkFlake (
+    trevpkgs.libs.mkFlake (
       system: pkgs: {
         devShells = {
           default = pkgs.mkShell {
@@ -146,10 +146,10 @@
           prettier = {
             root = ./.;
             filter = file: file.hasExt "yaml" || file.hasExt "json" || file.hasExt "md";
-            deps = with pkgs; [
+            packages = with pkgs; [
               prettier
             ];
-            forEach = ''
+            script = ''
               prettier --check "$file"
             '';
           };
@@ -157,10 +157,10 @@
           nix = {
             root = ./.;
             filter = file: file.hasExt "nix";
-            deps = with pkgs; [
+            packages = with pkgs; [
               nixfmt
             ];
-            forEach = ''
+            script = ''
               nixfmt --check "$file"
             '';
           };
@@ -168,11 +168,11 @@
           actions = {
             root = ./.github/workflows;
             filter = file: file.hasExt "yaml";
-            deps = with pkgs; [
+            packages = with pkgs; [
               action-validator
               zizmor
             ];
-            forEach = ''
+            script = ''
               action-validator "$file"
               zizmor --offline "$file"
             '';
@@ -181,7 +181,7 @@
           renovate = {
             root = ./.github;
             fileset = ./.github/renovate.json;
-            deps = with pkgs; [
+            packages = with pkgs; [
               renovate
             ];
             script = ''
@@ -240,7 +240,7 @@
           };
         };
 
-        schemas = trev.schemas // {
+        schemas = trevpkgs.schemas // {
           templates =
             let
               mkChildren = children: { inherit children; };
