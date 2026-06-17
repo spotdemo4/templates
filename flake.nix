@@ -31,7 +31,7 @@
       };
     };
     svelte-template = {
-      url = "github:spotdemo4/svelte-template/038f41a61e70d27be3d9a02fd5d6259494383225";
+      url = "github:spotdemo4/svelte-template/c5cdeca1b9f7f62106237d2201009e2b9fbc9511";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
