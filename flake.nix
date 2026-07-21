@@ -39,7 +39,7 @@
       };
     };
     node-template = {
-      url = "github:spotdemo4/node-template/bce33adcdaddb303e359fa6d7c936895501fe635";
+      url = "github:spotdemo4/node-template/6a881fe7b26f68964f8125ff4e4f00bacc428e54";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
