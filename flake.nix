@@ -23,7 +23,7 @@
 
     # templates
     go-template = {
-      url = "github:spotdemo4/go-template/1c077b0226e220089c4f2b18324a022148848826";
+      url = "github:spotdemo4/go-template/2ec9163fd425403486bf4151ca0872310d5cb587";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -39,7 +39,7 @@
       };
     };
     node-template = {
-      url = "github:spotdemo4/node-template/43843d06c17405191dd7b8d69c3281d74c3f5212";
+      url = "github:spotdemo4/node-template/5a0afa6b1cdefb63ee3e1b48d1af0b90cd1e42ef";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -47,7 +47,7 @@
       };
     };
     rust-template = {
-      url = "github:spotdemo4/rust-template/584fe3785cc903b6ba87fc47393cee97e0633483";
+      url = "github:spotdemo4/rust-template/7e5cefcf86172a3029ddd1ffed23298154b03cc3";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -55,7 +55,7 @@
       };
     };
     python-template = {
-      url = "github:spotdemo4/python-template/f3bf67ff0d4a5aaaa64badf25868a11c3d14c804";
+      url = "github:spotdemo4/python-template/ad62e1595bac1a328153a6443b1eb91ed4c5fbc3";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -63,7 +63,7 @@
       };
     };
     gleam-template = {
-      url = "github:spotdemo4/gleam-template/f9f8b7a425ee64910bfe8f0311450f02080dfda5";
+      url = "github:spotdemo4/gleam-template/a25b3505d06bc07d2594323dabae03b19dd40e46";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -71,7 +71,7 @@
       };
     };
     zig-template = {
-      url = "github:spotdemo4/zig-template/89ab5a40ca49ea3bfef73a20372c09f0746f8678";
+      url = "github:spotdemo4/zig-template/151450e7b8afa41004ad876c1a63e1bd685db45b";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -79,7 +79,7 @@
       };
     };
     cpp-template = {
-      url = "github:spotdemo4/cpp-template/f91cb2c2574cb58000dbb083a8ea4aa028a6f547";
+      url = "github:spotdemo4/cpp-template/2f291b8210d7e02495c34d013b37731e1e0ee860";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
