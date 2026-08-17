@@ -13,17 +13,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1786784803,
-        "narHash": "sha256-fajBYIdUGsAF7ZkFnya4YesLTRmw+Teg6iJQESTkF3U=",
+        "lastModified": 1786873975,
+        "narHash": "sha256-ZascANSyWeBYNqaqjFTTyY8K4LBoENnAE5+4nZHAsgw=",
         "owner": "spotdemo4",
         "repo": "cpp-template",
-        "rev": "916dff65ba24dc10df329fba4e4ab0e2e7b9f7f1",
+        "rev": "c4ac4f4e50c8d937bb61838939e6503b692882e2",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "cpp-template",
-        "rev": "916dff65ba24dc10df329fba4e4ab0e2e7b9f7f1",
+        "rev": "c4ac4f4e50c8d937bb61838939e6503b692882e2",
         "type": "github"
       }
     },
@@ -67,17 +67,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1786784849,
-        "narHash": "sha256-4NwAOgMCSSjbXAFILefGp8ipRk4BNOCeoj60cjwm/7U=",
+        "lastModified": 1786873837,
+        "narHash": "sha256-keim5U3Il2yREY4FS2J60KHNt1EcGIPVC/TcVUAAWew=",
         "owner": "spotdemo4",
         "repo": "go-template",
-        "rev": "4193c3c809c8cbe5b1ae137106d118dfeab700d7",
+        "rev": "01e3d9c03a143fd665c0f0cd7edbc01bb1834d3d",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "go-template",
-        "rev": "4193c3c809c8cbe5b1ae137106d118dfeab700d7",
+        "rev": "01e3d9c03a143fd665c0f0cd7edbc01bb1834d3d",
         "type": "github"
       }
     },
@@ -110,17 +110,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1786784999,
-        "narHash": "sha256-odJTgweEcpjl44BZDSCJFPGAxpaiD0jpKdfvMBt2sKM=",
+        "lastModified": 1786872724,
+        "narHash": "sha256-/lKZ5u5fHWCRJbc23Z6Wspo46EgWsratzuhD4+Kk4ug=",
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "4264f04f6f95e3143c64ce0a93c9175e6a7763ad",
+        "rev": "545a3ba6e4818f5987bbe6ef94b17ecae8ac53c4",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "4264f04f6f95e3143c64ce0a93c9175e6a7763ad",
+        "rev": "545a3ba6e4818f5987bbe6ef94b17ecae8ac53c4",
         "type": "github"
       }
     },
@@ -190,17 +190,17 @@
         "uv2nix": "uv2nix"
       },
       "locked": {
-        "lastModified": 1786784894,
-        "narHash": "sha256-3B3QzXJ/WcT1aCxfxFksL1QYzErJg19on+kXjOPZ0zQ=",
+        "lastModified": 1786872870,
+        "narHash": "sha256-kTwej9XZrmIHV+EL6tK5IyUqdt7xcn8RTXoAn0p+Ks0=",
         "owner": "spotdemo4",
         "repo": "python-template",
-        "rev": "cc50e1e1afb1b19cef388e85b9694a89796d897e",
+        "rev": "438bb410d59e317ec748b7a3a2fbe4a1418e691a",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "python-template",
-        "rev": "cc50e1e1afb1b19cef388e85b9694a89796d897e",
+        "rev": "438bb410d59e317ec748b7a3a2fbe4a1418e691a",
         "type": "github"
       }
     },
@@ -233,17 +233,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1786784849,
-        "narHash": "sha256-EpjvWVsxOUqdaVkFah0ds9Nlki83cVp6cZOl6TWVZTA=",
+        "lastModified": 1786873738,
+        "narHash": "sha256-DsEb5uZdS/mmbht5xgbdK4TQAogtvE0er3rEdxZID5I=",
         "owner": "spotdemo4",
         "repo": "rust-template",
-        "rev": "b065dd4d51fe7826c51e7cdb19cae2d200d795d2",
+        "rev": "4ce88b73ec134966425a1d3f1f8d8834f9aff979",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "rust-template",
-        "rev": "b065dd4d51fe7826c51e7cdb19cae2d200d795d2",
+        "rev": "4ce88b73ec134966425a1d3f1f8d8834f9aff979",
         "type": "github"
       }
     },
@@ -317,17 +317,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1786786357,
-        "narHash": "sha256-SAdBdslIV0h1qsV4C0YYqWho1dESR+krxaPc6FOpYPM=",
+        "lastModified": 1786872872,
+        "narHash": "sha256-EwUMbqIM90iD8taGr2E2LdyyfyKA4ZCmEbw+2fd4uAE=",
         "owner": "spotdemo4",
         "repo": "template",
-        "rev": "8684a1bd4c91d27dccae55d09216e7c03641d70b",
+        "rev": "2be4b7331a28fcb8b0eb4ab7cd7275628b36fd6c",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "template",
-        "rev": "8684a1bd4c91d27dccae55d09216e7c03641d70b",
+        "rev": "2be4b7331a28fcb8b0eb4ab7cd7275628b36fd6c",
         "type": "github"
       }
     },
@@ -367,11 +367,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786026603,
-        "narHash": "sha256-payw8w/aqR/Vr7LvDp14jxa5egFrZN7g8INsPzn7rN0=",
+        "lastModified": 1786615403,
+        "narHash": "sha256-U++y7nM/6xiEcWI7q4fQoPZjPvRaTwkSqzBOVoEBjUE=",
         "owner": "pyproject-nix",
         "repo": "uv2nix",
-        "rev": "0dfa8388dc855b1774f509725d8ea6806291571d",
+        "rev": "4b59abb2ae1896d2a0e1abfc47fbc9bf985ea730",
         "type": "github"
       },
       "original": {
@@ -393,17 +393,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1786784891,
-        "narHash": "sha256-srFYMoXok8/qyia0rS7Aa/PuWCTCnKgSlf1PPwu6/5s=",
+        "lastModified": 1786873021,
+        "narHash": "sha256-Tvjfd9iQixqHo97VRT0BDeJuy4A7SY8vj7Not0CU/ik=",
         "owner": "spotdemo4",
         "repo": "zig-template",
-        "rev": "314beeaedfce1f2b55767a3fbbd201aee31f70a7",
+        "rev": "a94f19a953ea23b2a42ec66938fea820b3ec1501",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "zig-template",
-        "rev": "314beeaedfce1f2b55767a3fbbd201aee31f70a7",
+        "rev": "a94f19a953ea23b2a42ec66938fea820b3ec1501",
         "type": "github"
       }
     }
