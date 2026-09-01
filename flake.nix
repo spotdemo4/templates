@@ -47,7 +47,7 @@
       };
     };
     rust-template = {
-      url = "github:spotdemo4/rust-template/13ed99c1a12ee19b4e1eddc51718912fad1d2ebf";
+      url = "github:spotdemo4/rust-template/afbe7377e287f8ab64766bb8afbc042a926604c6";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -79,7 +79,7 @@
       };
     };
     cpp-template = {
-      url = "github:spotdemo4/cpp-template/ea17e5d6128a447143a5452241fff98a048758c4";
+      url = "github:spotdemo4/cpp-template/61995788e6110f74cc386795377b047499ea0770";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
