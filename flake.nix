@@ -23,7 +23,7 @@
 
     # templates
     go-template = {
-      url = "github:spotdemo4/go-template/b94da05ec57d4973483b1688cb7c757585a3eb5b";
+      url = "github:spotdemo4/go-template/29dc685b9db6f03721ae32749c7120edc3ab269f";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -47,7 +47,7 @@
       };
     };
     rust-template = {
-      url = "github:spotdemo4/rust-template/afbe7377e287f8ab64766bb8afbc042a926604c6";
+      url = "github:spotdemo4/rust-template/9d59b00422a97285d0af44270edcd4e53b0de0be";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -79,7 +79,7 @@
       };
     };
     cpp-template = {
-      url = "github:spotdemo4/cpp-template/61995788e6110f74cc386795377b047499ea0770";
+      url = "github:spotdemo4/cpp-template/9437404bffabcc606b74789b3693153506f3b4e8";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";

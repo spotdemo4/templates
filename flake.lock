@@ -13,17 +13,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1788240161,
-        "narHash": "sha256-wlmt/Z14k+J7FCcAmzZhhIYs0M7nB9S2ib6XTkkmKWk=",
+        "lastModified": 1788300166,
+        "narHash": "sha256-uRM0knJ1tLIe1AQqgLYzMNblxDxvKI1EfSZ1qbX53e0=",
         "owner": "spotdemo4",
         "repo": "cpp-template",
-        "rev": "61995788e6110f74cc386795377b047499ea0770",
+        "rev": "9437404bffabcc606b74789b3693153506f3b4e8",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "cpp-template",
-        "rev": "61995788e6110f74cc386795377b047499ea0770",
+        "rev": "9437404bffabcc606b74789b3693153506f3b4e8",
         "type": "github"
       }
     },
@@ -67,17 +67,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1788083193,
-        "narHash": "sha256-jTFHTCEBQeH5LXg0Gvdk5WqWEY6+nEWgO5OldtlyTmw=",
+        "lastModified": 1788340037,
+        "narHash": "sha256-AU8OtlJ1t4XoIDB2x2/qLxFTD0dgbW4CEl4g97UPX7A=",
         "owner": "spotdemo4",
         "repo": "go-template",
-        "rev": "b94da05ec57d4973483b1688cb7c757585a3eb5b",
+        "rev": "29dc685b9db6f03721ae32749c7120edc3ab269f",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "go-template",
-        "rev": "b94da05ec57d4973483b1688cb7c757585a3eb5b",
+        "rev": "29dc685b9db6f03721ae32749c7120edc3ab269f",
         "type": "github"
       }
     },
@@ -233,17 +233,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1788235845,
-        "narHash": "sha256-HOMQXNUKAhLgNtnFsOzS3Un6Bz+eTbgy0la9Pj6DfOo=",
+        "lastModified": 1788300165,
+        "narHash": "sha256-JHlNNH8ZUxLHq0ZqfPmxb0OT1iziDWl1NEigqBwqqVk=",
         "owner": "spotdemo4",
         "repo": "rust-template",
-        "rev": "afbe7377e287f8ab64766bb8afbc042a926604c6",
+        "rev": "9d59b00422a97285d0af44270edcd4e53b0de0be",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "rust-template",
-        "rev": "afbe7377e287f8ab64766bb8afbc042a926604c6",
+        "rev": "9d59b00422a97285d0af44270edcd4e53b0de0be",
         "type": "github"
       }
     },
