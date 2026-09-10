@@ -110,17 +110,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1788426498,
-        "narHash": "sha256-5TOLlrcurdBLWvcwoBQn/oFXN1ZOf8juwyFO7sigOXc=",
+        "lastModified": 1789031217,
+        "narHash": "sha256-PEFCTxq28sZbFQ8RhXPC+mmi25wbASlm63hET43/Kdo=",
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "e3dda77c33acee20a91a859d8a4d5f4de5e42fa9",
+        "rev": "e30284ad7000c34593780a268a2daf06a5690463",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "node-template",
-        "rev": "e3dda77c33acee20a91a859d8a4d5f4de5e42fa9",
+        "rev": "e30284ad7000c34593780a268a2daf06a5690463",
         "type": "github"
       }
     },
