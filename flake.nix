@@ -30,14 +30,6 @@
         trevpkgs.follows = "trevpkgs";
       };
     };
-    svelte-template = {
-      url = "github:spotdemo4/svelte-template/0c947b283e4a0de278e177d572bb5b7b14b9a317";
-      inputs = {
-        systems.follows = "systems";
-        nixpkgs.follows = "nixpkgs";
-        trevpkgs.follows = "trevpkgs";
-      };
-    };
     node-template = {
       url = "github:spotdemo4/node-template/a848e843bc7965eef52eb671eb9e0c9ebd6e17ee";
       inputs = {
@@ -102,7 +94,6 @@
 
       # templates
       go-template,
-      svelte-template,
       node-template,
       rust-template,
       python-template,
@@ -204,12 +195,6 @@
             path = go-template;
             description = "trev's go template";
             welcomeText = builtins.readFile "${go-template}/README.md";
-          };
-
-          svelte = {
-            path = svelte-template;
-            description = "trev's svelte template";
-            welcomeText = builtins.readFile "${svelte-template}/README.md";
           };
 
           node = {

@@ -213,7 +213,6 @@
         "node-template": "node-template",
         "python-template": "python-template",
         "rust-template": "rust-template",
-        "svelte-template": "svelte-template",
         "systems": "systems",
         "template": "template",
         "trevpkgs": "trevpkgs",
@@ -259,33 +258,6 @@
       "original": {
         "owner": "DeterminateSystems",
         "repo": "flake-schemas",
-        "type": "github"
-      }
-    },
-    "svelte-template": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "systems": [
-          "systems"
-        ],
-        "trevpkgs": [
-          "trevpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1786268185,
-        "narHash": "sha256-C0JY39WDOHPST0SD8oRdbGMbnp9ym7dwiM/iQbtH7iI=",
-        "owner": "spotdemo4",
-        "repo": "svelte-template",
-        "rev": "0c947b283e4a0de278e177d572bb5b7b14b9a317",
-        "type": "github"
-      },
-      "original": {
-        "owner": "spotdemo4",
-        "repo": "svelte-template",
-        "rev": "0c947b283e4a0de278e177d572bb5b7b14b9a317",
         "type": "github"
       }
     },
