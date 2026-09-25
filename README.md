@@ -5,14 +5,15 @@ Jumping off templates for various languages. Includes automated formatting, lint
 ### GitHub
 
 - Create a [GitHub app for renovate](https://docs.renovatebot.com/modules/platform/github/#running-as-a-github-app)
-- Set `vars.CLIENT_ID` & `secrets.PRIVATE_KEY` in the repository settings
+- Set `vars.CLIENT_ID` & `secrets.PRIVATE_KEY` using the GitHub app credentials
 - Create a branch protection ruleset for `main` that requires the `check` status check to pass
 
-### Gitea
+### Forgejo / Gitea
 
-- Create a [bot account for renovate](https://docs.renovatebot.com/modules/platform/gitea/)
-- Set `secrets.RENOVATE_TOKEN` in the repository settings
-- Create a read-only GitHub token and set `secrets.GH_TOKEN` in the repository settings
+- Create a [bot account for renovate](https://docs.renovatebot.com/modules/platform/gitea/) and create an access token for `secrets.RENOVATE_TOKEN`
+- Create an access token for `secrets.DOCTOR_TOKEN`
+- Create an access token for `secrets.PACKAGE_TOKEN`
+- Create a read-only GitHub token for `secrets.GH_TOKEN`
 - Create a branch protection rule for `main` that requires the `check` status check to pass
 
 ## Go
