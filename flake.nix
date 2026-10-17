@@ -78,6 +78,22 @@
         trevpkgs.follows = "trevpkgs";
       };
     };
+    kotlin-template = {
+      url = "github:spotdemo4/kotlin-template/a77e27a3959b9845c7d663eff2d5db1c48f1110e";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trevpkgs.follows = "trevpkgs";
+      };
+    };
+    trevstack = {
+      url = "github:spotdemo4/trevstack/946c1c9666b907cbe1f74ad0ebc0878f5da42bf8";
+      inputs = {
+        systems.follows = "systems";
+        nixpkgs.follows = "nixpkgs";
+        trevpkgs.follows = "trevpkgs";
+      };
+    };
     template = {
       url = "github:spotdemo4/template/b4d1366375a1d6362ac29b00133bf528205ad9e4";
       inputs = {
@@ -100,6 +116,8 @@
       gleam-template,
       zig-template,
       cpp-template,
+      kotlin-template,
+      trevstack,
       template,
 
       ...
@@ -231,6 +249,18 @@
             path = cpp-template;
             description = "trev's cpp template";
             welcomeText = builtins.readFile "${cpp-template}/README.md";
+          };
+
+          kotlin = {
+            path = kotlin-template;
+            description = "trev's kotlin template";
+            welcomeText = builtins.readFile "${kotlin-template}/README.md";
+          };
+
+          stack = {
+            path = trevstack;
+            description = "trev's full-stack template";
+            welcomeText = builtins.readFile "${trevstack}/README.md";
           };
 
           default = {

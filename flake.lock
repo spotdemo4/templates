@@ -81,6 +81,33 @@
         "type": "github"
       }
     },
+    "kotlin-template": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": [
+          "systems"
+        ],
+        "trevpkgs": [
+          "trevpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792231443,
+        "narHash": "sha256-U88qMK5LbwARwEra3Q60Zf613Qnm47EQdCEe8vDPoPE=",
+        "owner": "spotdemo4",
+        "repo": "kotlin-template",
+        "rev": "a77e27a3959b9845c7d663eff2d5db1c48f1110e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spotdemo4",
+        "repo": "kotlin-template",
+        "rev": "a77e27a3959b9845c7d663eff2d5db1c48f1110e",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1791966044,
@@ -156,6 +183,7 @@
         "cpp-template": "cpp-template",
         "gleam-template": "gleam-template",
         "go-template": "go-template",
+        "kotlin-template": "kotlin-template",
         "nixpkgs": "nixpkgs",
         "node-template": "node-template",
         "python-template": "python-template",
@@ -163,6 +191,7 @@
         "systems": "systems",
         "template": "template",
         "trevpkgs": "trevpkgs",
+        "trevstack": "trevstack",
         "zig-template": "zig-template"
       }
     },
@@ -271,6 +300,33 @@
       "original": {
         "owner": "spotdemo4",
         "repo": "trevpkgs",
+        "type": "github"
+      }
+    },
+    "trevstack": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": [
+          "systems"
+        ],
+        "trevpkgs": [
+          "trevpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792231863,
+        "narHash": "sha256-M6ppFjF1KXHvQDjnGncfBk9glhVUYYqHVkLhSVYesS8=",
+        "owner": "spotdemo4",
+        "repo": "trevstack",
+        "rev": "946c1c9666b907cbe1f74ad0ebc0878f5da42bf8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "spotdemo4",
+        "repo": "trevstack",
+        "rev": "946c1c9666b907cbe1f74ad0ebc0878f5da42bf8",
         "type": "github"
       }
     },
