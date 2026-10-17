@@ -2,6 +2,46 @@
 
 Jumping off templates for various languages. Includes automated formatting, linting, updates and releases. Built around [nix](https://nixos.org/) flakes.
 
+| template                | for                                                                                                                                                       |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Go](#go)               | [Go](https://go.dev/)                                                                                                                                     |
+| [Node](#node)           | [Node.js](https://nodejs.org/)                                                                                                                            |
+| [Rust](#rust)           | [Rust](https://rust-lang.org/)                                                                                                                            |
+| [Python](#python)       | [Python](https://www.python.org/)                                                                                                                         |
+| [Gleam](#gleam)         | [Gleam](https://gleam.run/)                                                                                                                               |
+| [Zig](#zig)             | [Zig](https://ziglang.org/)                                                                                                                               |
+| [C++](#c)               | [C++](https://isocpp.org/)                                                                                                                                |
+| [Kotlin](#kotlin)       | [Kotlin](https://kotlinlang.org/)                                                                                                                         |
+| [TrevStack](#trevstack) | full-stack apps with [Go](https://go.dev/), [Rust](https://rust-lang.org/), [SolidJS](https://www.solidjs.com/) and [ConnectRPC](https://connectrpc.com/) |
+| [Default](#default)     | any project, without a language toolchain                                                                                                                 |
+
+## What you get
+
+- **[nix](https://nixos.org/) flake**: a dev shell with the toolchain, language servers and formatters, plus `nix run`, `nix build`, `nix fmt` and `nix flake check`
+- **CI**: Forgejo and GitHub workflows that check, scan for vulnerabilities, bump versions, release and label pull requests
+- **Dependency updates**: [Renovate](https://docs.renovatebot.com/) keeps dependencies and `flake.lock` current
+- **Releases**: Nix packages, container images and release downloads, plus language registry packages where it applies (cargo, go, npm, pip)
+- **Editor setup**: VS Code and Zed settings, plus an `AGENTS.md` for coding agents
+
+## Starting a project
+
+Create a repository from a template (on GitHub, use "Use this template" on the mirror) and run:
+
+```sh
+./init.sh "Title" "Description"
+```
+
+Or, in a new git repository with an `origin` remote, run:
+
+```sh
+nix flake init -t git+https://trev.zip/template/<name>
+bash init.sh "Title" "Description"
+```
+
+`init.sh` renames the project to your title and description, points its links and badges at your `origin` repository, records the template it came from in `.template.json`, then deletes itself and starts a new root commit. Run it from the repository root with a clean worktree and with git `user.name` and `user.email` set.
+
+## Setup
+
 ### GitHub
 
 - Create a [GitHub app for renovate](https://docs.renovatebot.com/modules/platform/github/#running-as-a-github-app)
