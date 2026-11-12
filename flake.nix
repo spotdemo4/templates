@@ -23,7 +23,7 @@
 
     # templates
     go-template = {
-      url = "github:spotdemo4/go-template/fd1e1e9f8b6d1a1187008e1743ae956b6910f361";
+      url = "github:spotdemo4/go-template/975058f6197f408122fbd38fe4984280d5b8274d";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -31,7 +31,7 @@
       };
     };
     node-template = {
-      url = "github:spotdemo4/node-template/d17c53a3496e21fc8fc3207e4a6def915973a8a2";
+      url = "github:spotdemo4/node-template/23d65edb046be2e63dd65066d6101a772264aa27";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -39,7 +39,7 @@
       };
     };
     rust-template = {
-      url = "github:spotdemo4/rust-template/8991b38e8e03a81862ec36919d217ba761c4dd1e";
+      url = "github:spotdemo4/rust-template/713c22301d8b459456931ae760ac2061a05f6bf0";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -47,7 +47,7 @@
       };
     };
     python-template = {
-      url = "github:spotdemo4/python-template/23d2562993c2c9b2c36604d3c2606b0cb54d2141";
+      url = "github:spotdemo4/python-template/be22f3ed36db470a7038610b40d4882bcef1cbaa";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -55,7 +55,7 @@
       };
     };
     gleam-template = {
-      url = "github:spotdemo4/gleam-template/0df9dc22c4d8eb7a84ce0f5eade6c59f77b02c1a";
+      url = "github:spotdemo4/gleam-template/5641a1d3996d93e43be0dd9422b68602fe2f46c1";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -63,7 +63,7 @@
       };
     };
     zig-template = {
-      url = "github:spotdemo4/zig-template/bfeb13ea7c114a34ea21623b791bdd6cfc1d1a1a";
+      url = "github:spotdemo4/zig-template/e15c37dc41af5cbacf7a1dc40985b1a2cbeaf698";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -71,7 +71,7 @@
       };
     };
     cpp-template = {
-      url = "github:spotdemo4/cpp-template/9e2ca97c7efb420030d674ec7e97e0374bf441a3";
+      url = "github:spotdemo4/cpp-template/98f102dceaf8ab815266054012d133de485e8c52";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -79,7 +79,7 @@
       };
     };
     kotlin-template = {
-      url = "github:spotdemo4/kotlin-template/f574456888d18b0a096115fc53a1ab25829b464d";
+      url = "github:spotdemo4/kotlin-template/ccadbf17d1713679a518696e9612dd858ef4f9f7";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -87,7 +87,7 @@
       };
     };
     trevstack = {
-      url = "github:spotdemo4/trevstack/8499f8bbb8220c89e797f079ebfc6adbf07915f8";
+      url = "github:spotdemo4/trevstack/d96ab6a8e1537058f49cc62c0f1572f662fc2274";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -95,7 +95,7 @@
       };
     };
     template = {
-      url = "github:spotdemo4/template/fda1a6ca255eda8f1578609007118862e3beb79a";
+      url = "github:spotdemo4/template/312c042da9efd6afb35e8f8c069d2c81d1d19f2f";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
