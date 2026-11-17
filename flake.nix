@@ -87,7 +87,7 @@
       };
     };
     trevstack = {
-      url = "github:spotdemo4/trevstack/fc6ff6c2a85a12cc64ab31887d4412ca27070588";
+      url = "github:spotdemo4/trevstack/891fa1190650f292351074aef4159c3b26fc04af";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
