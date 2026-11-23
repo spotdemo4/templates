@@ -69,28 +69,6 @@
         "type": "github"
       }
     },
-    "flake-utils_3": {
-      "inputs": {
-        "systems": [
-          "trevstack",
-          "trevrpc",
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "gleam-template": {
       "inputs": {
         "nixpkgs": [
@@ -190,29 +168,6 @@
         "type": "github"
       }
     },
-    "gomod2nix_3": {
-      "inputs": {
-        "flake-utils": "flake-utils_3",
-        "nixpkgs": [
-          "trevstack",
-          "trevrpc",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1770585520,
-        "narHash": "sha256-yBz9Ozd5Wb56i3e3cHZ8WcbzCQ9RlVaiW18qDYA/AzA=",
-        "owner": "nix-community",
-        "repo": "gomod2nix",
-        "rev": "1201ddd1279c35497754f016ef33d5e060f3da8d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "gomod2nix",
-        "type": "github"
-      }
-    },
     "kotlin-template": {
       "inputs": {
         "nixpkgs": [
@@ -242,11 +197,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1795249095,
-        "narHash": "sha256-8JDgyVvWUZg5m9hNlL8Ge9aT647ng3Ukc8NPMiKNTPQ=",
+        "lastModified": 1795371335,
+        "narHash": "sha256-oa2P5WZer1A4wuhatl92JyHHEjrrOdIyuvTuI5LUi9Q=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "93a9ed0a866099a230ed5146a5bb7d16fd5c9b14",
+        "rev": "619c39f6eac5d1ed6b8f073a9414baf7034b2356",
         "type": "github"
       },
       "original": {
@@ -296,17 +251,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1795356300,
-        "narHash": "sha256-wAjWZTwumZu+w4DDUXYkyBkzkdCHDhmnvxOa34BPMQY=",
+        "lastModified": 1795371668,
+        "narHash": "sha256-J6gPmGJBzX0DyxzWzxWnv3KmeDlypnXPDFo63T/iy5E=",
         "owner": "spotdemo4",
         "repo": "python-template",
-        "rev": "b96abfcead894784e11d59af0b55afa23782fb48",
+        "rev": "5b852444237b213229b2293e7b8ec8f98092f52c",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "python-template",
-        "rev": "b96abfcead894784e11d59af0b55afa23782fb48",
+        "rev": "5b852444237b213229b2293e7b8ec8f98092f52c",
         "type": "github"
       }
     },
@@ -397,17 +352,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1795268323,
-        "narHash": "sha256-R58n2sXWN8Na1Puctkw/Qfpjsez8LyI1ObKFW4+P9d4=",
+        "lastModified": 1795356299,
+        "narHash": "sha256-t8c7L7LMaOLuJWlx2JGReLwOrXrMsJGgQ7h2a2PfNy8=",
         "owner": "spotdemo4",
         "repo": "template",
-        "rev": "d2f130362c4f16eaf4396d79e5931b9468e5346b",
+        "rev": "c4b9603fc37a161aff1866742b7f36db7a0341ad",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "template",
-        "rev": "d2f130362c4f16eaf4396d79e5931b9468e5346b",
+        "rev": "c4b9603fc37a161aff1866742b7f36db7a0341ad",
         "type": "github"
       }
     },
@@ -422,11 +377,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1795365197,
-        "narHash": "sha256-eZ4I+ZiLI/y+BIEfXkfbir+huxSaFVCYkZ1NLspMtj0=",
+        "lastModified": 1795412808,
+        "narHash": "sha256-eS83ai2zX9kP2aHTD+GYdG3m2RmbRsHfoYBcj9Iepv0=",
         "owner": "spotdemo4",
         "repo": "trevpkgs",
-        "rev": "ca00a895898338422aee25c338e5dac65ea6239d",
+        "rev": "9df62745351fcdb914d33c1129b6262ba2b9080f",
         "type": "github"
       },
       "original": {
@@ -437,7 +392,10 @@
     },
     "trevrpc": {
       "inputs": {
-        "gomod2nix": "gomod2nix_3",
+        "gomod2nix": [
+          "trevstack",
+          "gomod2nix"
+        ],
         "nixpkgs": [
           "trevstack",
           "nixpkgs"
@@ -481,17 +439,17 @@
         "trevrpc": "trevrpc"
       },
       "locked": {
-        "lastModified": 1795356300,
-        "narHash": "sha256-pAzr9tMhXbBCowb7j5Tz5n5lqpPG2iVnF54PWVcdsKM=",
+        "lastModified": 1795386045,
+        "narHash": "sha256-He78zu+b10TRhfRVUEzyPdGFJHeXgpMvx3G7B7F3uls=",
         "owner": "spotdemo4",
         "repo": "trevstack",
-        "rev": "79e68eecd7897d8e2130ab00bec78ee40849b310",
+        "rev": "2598266ed97fba45543f6cc8e62759254bf0bd5c",
         "type": "github"
       },
       "original": {
         "owner": "spotdemo4",
         "repo": "trevstack",
-        "rev": "79e68eecd7897d8e2130ab00bec78ee40849b310",
+        "rev": "2598266ed97fba45543f6cc8e62759254bf0bd5c",
         "type": "github"
       }
     },
