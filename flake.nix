@@ -31,7 +31,7 @@
       };
     };
     node-template = {
-      url = "github:spotdemo4/node-template/b7b3f71678f23afb5bc8f038b38de6c77a33d19d";
+      url = "github:spotdemo4/node-template/a2407b70ba07fcae937091e2bceb95ca95743a91";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
@@ -87,7 +87,7 @@
       };
     };
     trevstack = {
-      url = "github:spotdemo4/trevstack/a44399792bd534b044c432b36de40cb310df0531";
+      url = "github:spotdemo4/trevstack/130721f3c597b8a9de82f38b86c66e7a10188a9e";
       inputs = {
         systems.follows = "systems";
         nixpkgs.follows = "nixpkgs";
